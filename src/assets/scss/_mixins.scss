@@ -1,0 +1,54 @@
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+     $src: null;
+   
+     $extmods: (eot: "?",
+         svg: "#"+ str-replace($name, " ", "_"));
+   
+     $formats: (otf: "opentype",
+         ttf: "truetype"
+       );
+   
+     @each $ext in $exts {
+       $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+       $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+       $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+     }
+   
+     @font-face {
+       font-family: quote($name);
+       font-style: $style;
+       font-weight: $weight;
+       src: $src;
+     }
+   }
+   
+   $breakpoints: (
+     3xs: 350px,
+     2xs: 420px,
+     xs: 576px,
+     sm: 768px,
+     md: 992px,
+     lg: 1280px,
+     xl: 1440px,
+   );
+   
+   @mixin respond-below($breakpoint) {
+   
+     // If the breakpoint exists in the map.
+     @if map-has-key($breakpoints, $breakpoint) {
+       // Get the breakpoint value.
+       $breakpoint-value: map-get($breakpoints,
+           $breakpoint); // Write the media query.
+   
+       @media (max-width: ($breakpoint-value - 1)) {
+         @content;
+       }
+   
+       // If the breakpoint doesn't exist in the map.
+     }
+   
+     @else {
+       // Log a warning.
+       @warn "Invalid breakpoint: #{$breakpoint}.";
+     }
+   }
