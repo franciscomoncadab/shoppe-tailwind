@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Logo } from "../assets/images/icons/shoppe.svg";
+import { ReactComponent as Logo } from "../assets/icons/shoppe.svg";
 
 function NavBar() {
   return (
@@ -24,8 +24,8 @@ function NavBar() {
           >
             <span className="sr-only">Open user menu</span>
             <img
-              className="w-8 h-8 rounded-full"
-              src="/docs/images/people/profile-picture-3.jpg"
+              className="w-5 h-5 rounded-full"
+              src="/assets/icons/menu.svg"
               alt="user photo"
             />
           </button>
