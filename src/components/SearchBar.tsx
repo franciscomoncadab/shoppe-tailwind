@@ -5,16 +5,16 @@ function SearchBar() {
   return (
     <div>
       <form>
-        <div className="relative">
-          <div className="flex flex-row rounded-md">
-            <Lense className="bg-gray-200 w-5 h-9" /> 
+        <div>
+          <div  className="relative flex items-center text-black focus-withing:text-gray-300">
+            <Lense className="absolute inset-y-0 my-auto w-4 h-5 ml-6 bg-gray pointer-events-none" /> 
             <input
             type="search"
             id="search"
-            className="bg-gray-200 w-full rounded-md p-1"
+            className="pr-3 pl-10 py-2 w-full m-3 bg-gray border-none rounded-md focus:ring-gray-300" 
             placeholder="Search"
             required
-          />
+            />
           </div>
           
         </div>
