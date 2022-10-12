@@ -2,6 +2,11 @@
      width: 100%;
      height: 100%;
    }
+
+   .mySwiper {
+    width: 100%;
+    height: 100%;
+   }
    
    .swiper-slide {
      text-align: center;
@@ -26,7 +31,8 @@
    .swiper-slide img {
      display: block;
      width: 100%;
-     height: 100%;
+     height: 299px;
      object-fit: cover;
    }
+   
    
