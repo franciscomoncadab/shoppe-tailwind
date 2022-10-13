@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-14 md:flex md:justify-between">
-          <div className="grid grid-cols-3 gap-3 sm:grid sm:grid-row-3 sm:grid-flow-col sm:gap-3">
+          <div className="grid grid-col gap-3 sm:grid sm:grid-row-3 sm:grid-flow-col sm:gap-3">
             <div>
               <ul className="text-dark-gray hover:text-black">
                 <li className="mb-4">
