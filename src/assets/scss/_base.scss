@@ -1,0 +1,15 @@
+@layer components {
+     .background{
+          @apply bg-white;
+     }
+};
+     h2{
+          font-family: $proyectfont;
+          font-weight: 500;
+
+     };
+
+     p {
+          font-family: $proyectfont;
+          font-weight: 400;
+     }

@@ -1,0 +1,17 @@
+$proyectfont: "DM Sans", sans-serif, helvetica; // User font family
+
+// Font weigth
+$font-weight-300: 300;
+$font-weight-300: 400;
+$font-weight-300: 500;
+$font-weight-300: 600;
+$font-weight-300: 700;
+$font-weight-300: 900;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@include font-face("DM Sans", "../fonts/DMSans-Bold", 700, normal, ttf);
+@include font-face("DM Sans", "../fonts/DMSans-Medium", 500, normal, ttf);
+@include font-face("DM Sans", "../fonts/DMSans-Regular", 400, normal, ttf);

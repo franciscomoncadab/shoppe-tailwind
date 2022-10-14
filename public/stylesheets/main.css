@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.searchbar {
+  box-shadow: 0px 4px 80px rgba(208, 207, 212, 0.2);
+  @apply w-[327px]
+     m-auto
+     pb-6
+     lg:absolute
+     lg:w-[810px]
+     lg:z-10
+     lg:right-[490px]
+     lg:top-[280px]
+     xl:right-[240px]
+     xl:top-[260px]
+     2xl:left-[350px]
+     2xl:top-[265px]
+     3xl:left-[240px];
+}
+
+/*# sourceMappingURL=main.css.map */
