@@ -10,7 +10,7 @@ function Footer() {
   } 
 
   return (
-    <footer>
+    <footer className="pt-10">
       <div className="p-4 bg-white sm:p-6">
         {/* <hr className="my-6 border-gray sm:mx-auto" /> */}
         <div className="relative flex items-center">
@@ -18,15 +18,15 @@ function Footer() {
             className="w-full border-b-2 mb-3 pb-1"
             placeholder="Give an email, get the newsletter."
           />
-          <Arrow className="absolute inset-y-0 my-auto w-5 h-5 ml-80 mt-1 pointer-events-none" />
-          <div className="absolute flex flex-start mt-10">
+          <Arrow className="absolute w-5 h-5 ml-[360px] mb-3 pointer-events-none" />
+          <div className="absolute flex flex-start mt-16">
             <br />
             <input 
               type="checkbox"
               value="check"
               onChange={handleChange}
               checked={check}
-            /> <p className="font-medium ml-1">i agree to the website's terms and conditions</p>
+            /> <p className="font-medium mb-1 ml-1">i agree to the website's terms and conditions</p>
           </div>
         </div>
         <div className="mt-14 md:flex md:justify-between">

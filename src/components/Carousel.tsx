@@ -20,12 +20,12 @@ function Carousel() {
       <Swiper
           
           loop={true}
-          spaceBetween={-15}
-          slidesPerView={2}
-          freeMode={false}
+          spaceBetween={10}
+          slidesPerView={2.5}
+          freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
-          className="mySwiper"
+          className="mySwiper mt-3 ml-3"
         >
           <SwiperSlide>
             <button className="border-solid border-2 border-light-gray rounded-md h-12 w-40">
@@ -45,12 +45,12 @@ function Carousel() {
         </Swiper>
       </div>
       <div className="relative z-0">
-        <p className="absolute z-10 text-white mt-44 text-2xl ml-5">
+        <p className="absolute z-10 text-white mt-60 text-2xl ml-5">
           Gold Big Hoops{" "}
         </p>
         <br />
-        <p className="absolute z-10 text-white text-xs mt-48 ml-5">$ 68.00</p>
-        <button className="absolute z-10 rounded-md border-solid border-l-2 border-r-2 border-x-2 border-y-2 text-white text-center mt-56 ml-5 p-2">
+        <p className="absolute z-10 text-white text-xs mt-64 ml-5">$ 68.00</p>
+        <button className="absolute z-10 rounded-md border-solid border-l-2 border-r-2 border-x-2 border-y-2 text-white text-center mt-72 ml-5 p-2">
           {" "}
           View Product
         </button>
