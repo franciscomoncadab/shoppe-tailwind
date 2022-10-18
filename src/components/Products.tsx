@@ -37,11 +37,11 @@ function Products() {
                </div>
           </div>
           <div className="relative p-2 rounded-md col-span-2 z-0">
-               <div className="absolute z-10 mt-2 ml-1.5">
+               <div className="absolute z-10 top-[8%] xs:top-[5%] ml-1.5">
                <span className="bg-gold text-white text-xs mr-2 px-2.5 py-1.5 rounded ">Earring</span>
                </div>
-               <div className="absolute my-1 z-10 mt-28 ml-2">
-                    <p className=" font-medium">Hal Earrings</p>
+               <div className="absolute my-1 z-10 top-[65%] xs:top-[75%] ml-2">
+                    <p className=" font-medium xs:font-semibold ">Hal Earrings</p>
                     <p className="text-gold my-1"> $ 23,00</p>
                </div>
                <img 

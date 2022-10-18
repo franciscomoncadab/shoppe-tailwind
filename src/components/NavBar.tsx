@@ -9,11 +9,24 @@ import "../assets/scss/main.scss";
 
 function NavBar() {
   const [ mobileMenu, setMobileMenu ] = useState<boolean>(false);
+  
+  function disableScroll() {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    let scrollLeft = window.scrollX || document.documentElement.scrollLeft;
 
+      window.onscroll = () => {
+        window.scrollTo(scrollLeft, scrollTop);
+      }
+    
+  }
+
+  function enableScroll() {
+    window.scrollTo = () => {}
+  }
 
   return (
     <nav className="w-full h-full">
-      <div className="flex flex-wrap justify-between mx-auto w-full max-w-[1440px] h-full ">
+      <div className="flex flex-wrap justify-between mx-auto w-full max-w-[1280px] h-full ">
         <a href="/" className="flex items-center ml-3">
           <Logo 
             className="mt-2 h-7sm:h-9 content-start"
@@ -21,13 +34,23 @@ function NavBar() {
         </a>
         <a 
           className="flex items-center"
-          onClick={() => setMobileMenu(!mobileMenu)}
+          onClick={() => {
+            setMobileMenu(!mobileMenu)
+
+          }}
           >
             <Car className="mt-2 mr-3"/>
 
             {!mobileMenu ? 
-              <Menu className="mt-2 mr-3" /> 
-              : <Close className="mt-2 mr-3" />}
+              <Menu 
+                className="mt-2 mr-3" 
+                onClick={() => {disableScroll()}}
+              /> 
+              : <Close 
+                className="mt-2 mr-3"
+                onClick={() => {enableScroll()}}
+              />}
+            
         </a>
 
         <ul className={`absolute z-30 bg-white top-24 ${mobileMenu ? "left-0" : "-left-full"} w-full ml-3 h-full flex-col ease-linear duration-[0.3s] sm:flex sm:justify-between sm:list-none sm:h-full`}>

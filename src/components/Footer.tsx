@@ -18,8 +18,8 @@ function Footer() {
             className="w-full border-b-2 mb-3 pb-1"
             placeholder="Give an email, get the newsletter."
           />
-          <Arrow className="absolute w-5 h-5 ml-[360px] mb-3 pointer-events-none" />
-          <div className="absolute flex flex-start mt-16">
+          <Arrow className="absolute w-5 h-5 left-[94%] xs:left-[97%] mb-3 pointer-events-none" />
+          <div className="absolute flex flex-start mt-16 xs:hidden">
             <br />
             <input 
               type="checkbox"
@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-14 md:flex md:justify-between">
-          <div className="grid grid-col gap-3 sm:grid sm:grid-row-3 sm:grid-flow-col sm:gap-3">
+          <div className="grid grid-col gap-3 xs:grid xs:grid-row-3 xs:grid-flow-col xs:gap-3">
             <div>
               <ul className="text-dark-gray hover:text-black">
                 <li className="mb-4">
@@ -55,8 +55,8 @@ function Footer() {
           </div>
         </div>
         <br />
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <div className="flex mt-2 mb-12 space-x-6 sm:justify-center sm:mt-0">
+        <div className="xs:flex xs:items-center xs:justify-between xs:flex-row-reverse">
+          <div className="flex mt-2 mb-12 space-x-6 sm:justify-center xs:mr-20">
             <span className="relative flex flex-start">
               {" "}
               Follow us
@@ -111,7 +111,7 @@ function Footer() {
               <span className="sr-only">Twitter page</span>
             </a>
           </div>
-          <span className="text-sm text-dark-gray mb-4 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-dark-gray mb-4 xs:flex-start">
             <a href="." className="text-dark-gray hover:underline">
               © 2021 Shelly
             </a>
