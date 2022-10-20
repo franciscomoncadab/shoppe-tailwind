@@ -3,34 +3,37 @@ import "../assets/scss/main.scss";
 import { ReactComponent as Arrow } from "../assets/icons/arrow.svg";
 
 function Footer() {
-  const [check, setCheck] = useState<boolean>(false)
+  const [check, setCheck] = useState<boolean>(false);
 
   const handleChange = (e: any) => {
     setCheck(e.target.checked);
-  } 
+  };
 
   return (
-    <footer className="pt-10">
-      <div className="p-4 bg-white sm:p-6">
-        {/* <hr className="my-6 border-gray sm:mx-auto" /> */}
-        <div className="relative flex items-center">
+    <footer className="pt-10 xs:pt-0 xs:mt-52 xs:px-12">
+      {window.innerWidth > 873 ? <hr className="border-gray w-[97%] ml-5" /> : null}
+      <div className="p-4 bg-white xs:grid xs:grid-row-4">
+        <div className="relative flex items-center xs:left-[70%] xs:top-[28px] xs:z-10">
           <input
-            className="w-full border-b-2 mb-3 pb-1"
+            className="w-full xs:w-[30%] border-b-2 mb-3 pb-1"
             placeholder="Give an email, get the newsletter."
           />
-          <Arrow className="absolute w-5 h-5 left-[94%] xs:left-[97%] mb-3 pointer-events-none" />
+          <Arrow className="absolute w-5 h-5 left-[94%] xs:left-[23%] mb-3 pointer-events-none" />
           <div className="absolute flex flex-start mt-16 xs:hidden">
             <br />
-            <input 
+            <input
               type="checkbox"
               value="check"
               onChange={handleChange}
               checked={check}
-            /> <p className="font-medium mb-1 ml-1">i agree to the website's terms and conditions</p>
+            />{" "}
+            <p className="font-medium mb-1 ml-1">
+              i agree to the website's terms and conditions
+            </p>
           </div>
         </div>
-        <div className="mt-14 md:flex md:justify-between">
-          <div className="grid grid-col gap-3 xs:grid xs:grid-row-3 xs:grid-flow-col xs:gap-3">
+        <div className="mt-14 xs:mt-0 ">
+          <div className="grid grid-col gap-3 xs:grid-flow-col xs:justify-start xs:space-x-4 ">
             <div>
               <ul className="text-dark-gray hover:text-black">
                 <li className="mb-4">
@@ -54,16 +57,16 @@ function Footer() {
             </div>
           </div>
         </div>
-        <br />
-        <div className="xs:flex xs:items-center xs:justify-between xs:flex-row-reverse">
-          <div className="flex mt-2 mb-12 space-x-6 sm:justify-center xs:mr-20">
-            <span className="relative flex flex-start">
+        
+        <div className="xs:flex xs:items-center xs:justify-between xs:flex-row-reverse xs:py-2">
+          <div className="flex mt-2 mb-12 space-x-6 sm:justify-center xs:mr-14">
+            <span className="relative flex flex-start xs:hidden">
               {" "}
               Follow us
               {"   "}
-              <span>_____</span>
+              <span className="px-2 xs:hidden">_____</span>
             </span>
-            <a href="." className="text-dark-gray hover:text-gray-900">
+            <a href="." className="text-dark-gray hover:text-black">
               <svg
                 className="w-5 h-5"
                 fill="currentColor"
@@ -80,7 +83,7 @@ function Footer() {
             </a>
             <a
               href="."
-              className="text-dark-gray hover:text-gray-900 dark:hover:text-white"
+              className="text-dark-gray  hover:text-black"
             >
               <svg
                 className="w-5 h-5"
@@ -98,7 +101,7 @@ function Footer() {
             </a>
             <a
               href="."
-              className="text-dark-gray hover:text-gray-900 dark:hover:text-white"
+              className="text-dark-gray  hover:text-black"
             >
               <svg
                 className="w-5 h-5"

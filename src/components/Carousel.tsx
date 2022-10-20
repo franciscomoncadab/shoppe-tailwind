@@ -9,61 +9,64 @@ import "swiper/css/free-mode";
 import "../assets/scss/main.scss";
 import { FreeMode, Navigation, Thumbs } from "swiper";
 
-
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 function Carousel() {
-  
   return (
-    <>
-    <div>
-      <Swiper
-          
+    <div className="w-full xs:px-12">
+      <div>
+        <Swiper
           loop={false}
-          spaceBetween={10}
-          slidesPerView={2.3}
+          spaceBetween={window.innerWidth < 560 ? 10 : 40}
+          slidesPerView={window.innerWidth < 560 ? 2.3 : 3}
           freeMode={false}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
-          className="mySwiper mt-3 ml-3"
+          className="mySwiper pl-1.5"
         >
           <SwiperSlide>
             <button className="border-solid border-2 border-light-gray rounded-md h-12 w-40">
-              <p>Earring</p> 
+              <p>Earring</p>
             </button>
           </SwiperSlide>
           <SwiperSlide>
             <button className="border-solid border-2 border-light-gray rounded-md h-12 w-40">
-              <p>Necklace</p>  
+              <p>Necklace</p>
             </button>
           </SwiperSlide>
           <SwiperSlide>
-            <button className="border-solid border-2 border-light-gray rounded-md h-12 w-40" >
-              <p>Others</p>  
+            <button className="border-solid border-2 border-light-gray rounded-md h-12 w-40">
+              <p>Others</p>
             </button>
           </SwiperSlide>
         </Swiper>
       </div>
       <div className="relative z-0">
-        <p className="absolute z-10 text-white mt-[270px] text-2xl ml-5">
+        <p className="absolute z-10 text-white mt-[270px] text-2xl pl-6 xs:pl-12">
           Gold Big Hoops{" "}
         </p>
         <br />
-        <p className="absolute z-10 text-white text-xs mt-[286px] ml-5">$ 68.00</p>
-        <button className="absolute z-10 rounded-md border-solid border-l-2 border-r-2 border-x-2 border-y-2 text-white text-center mt-[320px] ml-5 p-2">
+        <p className="absolute z-10 text-white text-xs mt-[286px] pl-6 xs:pl-12">
+          $ 68.00
+        </p>
+        <button className="absolute z-10 rounded-md border-solid border-l-2 border-r-2 border-x-2 border-y-2 text-white text-center mt-[320px] ml-6 p-2 xs:ml-12">
           {" "}
           View Product
         </button>
         <Swiper
           spaceBetween={20}
+          autoplay={window.innerWidth < 873 ? true : false && {
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
-          className="swiper p-3"
+          modules={[Pagination, Navigation, Autoplay]}
+          className="swiper p-3 -top-5"
         >
           <SwiperSlide className="z-10">
-            <img src="./images/img1.png" alt="imagen1" className="rounded-lg" />
+            <img src={window.innerWidth < 873 ? "./images/img1.png" : "./images/img01.png"} alt="imagen1" className="rounded-lg" />
           </SwiperSlide>
           <SwiperSlide className="z-10">
             <img src="./images/img2.jpg" alt="imagen2" className="rounded-lg" />
@@ -79,7 +82,7 @@ function Carousel() {
           </SwiperSlide>
         </Swiper>
       </div>
-    </>
+    </div>
   );
 }
 

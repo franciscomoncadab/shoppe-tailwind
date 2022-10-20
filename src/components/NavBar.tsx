@@ -11,8 +11,11 @@ function NavBar() {
   const [ mobileMenu, setMobileMenu ] = useState<boolean>(false);
   
   function disableScroll() {
-    let scrollTop = window.scrollY || document.documentElement.scrollTop;
-    let scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+    let scrollLeft:any;
+    let scrollTop:any;
+    if(window.innerWidth < 873)
+    scrollTop = window.scrollY || document.documentElement.scrollTop;
+    scrollLeft = window.scrollX || document.documentElement.scrollLeft;
 
       window.onscroll = () => {
         window.scrollTo(scrollLeft, scrollTop);
@@ -25,7 +28,7 @@ function NavBar() {
   }
 
   return (
-    <nav className="w-full h-full">
+    <nav className="w-full h-full xs:px-12 xs:pt-10">
       <div className="flex flex-wrap justify-between mx-auto w-full max-w-[1280px] h-full ">
         <a href="/" className="flex items-center ml-3">
           <Logo 
@@ -53,7 +56,7 @@ function NavBar() {
             
         </a>
 
-        <ul className={`absolute z-30 bg-white top-24 ${mobileMenu ? "left-0" : "-left-full"} w-full ml-3 h-full flex-col ease-linear duration-[0.3s] sm:flex sm:justify-between sm:list-none sm:h-full`}>
+        <ul className={`absolute z-30 bg-white top-24 ${mobileMenu ? "left-0" : "-left-full"} w-full p-3 h-full flex-col ease-linear duration-[0.3s] sm:flex sm:justify-between sm:list-none sm:h-full`}>
           <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
             <a className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
               Home
