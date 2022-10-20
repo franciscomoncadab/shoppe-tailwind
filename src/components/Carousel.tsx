@@ -13,7 +13,7 @@ import { Pagination, Autoplay } from "swiper";
 
 function Carousel() {
   return (
-    <div className="w-full xs:px-12">
+    <div className="w-full sm:px-12">
       <div>
         <Swiper
           loop={false}
@@ -49,13 +49,13 @@ function Carousel() {
         <p className="absolute z-10 text-white text-xs mt-[286px] pl-6 xs:pl-12">
           $ 68.00
         </p>
-        <button className="absolute z-10 rounded-md border-solid border-l-2 border-r-2 border-x-2 border-y-2 text-white text-center mt-[320px] ml-6 p-2 xs:ml-12">
+        <button className="absolute z-10 rounded-md border-solid border-l-2 border-r-2 border-x-2 border-y-2 xs:ml-12 text-white text-center mt-[320px] ml-6 p-2 xs:px-4">
           {" "}
           View Product
         </button>
         <Swiper
           spaceBetween={20}
-          autoplay={window.innerWidth < 873 ? true : false && {
+          autoplay={window.innerWidth > 873 ? true : false && {
             delay: 3000,
             disableOnInteraction: false,
           }}

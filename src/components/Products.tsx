@@ -10,7 +10,7 @@ import product5 from "../assets/images/Img05.png";
 
 function Products() {
   return (
-    <div className="w-full xs:px-11">
+    <div className="w-full sm:px-11">
       <div className="flex flex-grow justify-between">
         <h2 className="text-xl ml-6 xs:text-2xl xs:mb-3">Shop The Latest</h2>
         <p className="text-gold mt-4 mr-3 text-xs xs:mr-6 xs:text-md hover:text-black hover:font-bold">
@@ -56,7 +56,7 @@ function Products() {
             alt="product3"
           />
         </div>
-        {window.innerWidth > 873 ? (
+        {window.innerWidth > 767 ? (
           <>
             <div className="p-2 rounded-md">
               <img

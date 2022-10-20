@@ -10,15 +10,15 @@ function Footer() {
   };
 
   return (
-    <footer className="pt-10 xs:pt-0 xs:mt-52 xs:px-12">
-      {window.innerWidth > 873 ? <hr className="border-gray w-[97%] ml-5" /> : null}
+    <footer className="pt-10 sm:pt-0 sm:mt-52 sm:px-12">
+      {window.innerWidth > 753 ? <hr className="border-gray w-[97%] ml-5 xs:w-[95%]" /> : null}
       <div className="p-4 bg-white xs:grid xs:grid-row-4">
-        <div className="relative flex items-center xs:left-[70%] xs:top-[28px] xs:z-10">
+        <div className="relative flex items-center xs:left-[64%] xs:top-[28px] xs:z-10">
           <input
-            className="w-full xs:w-[30%] border-b-2 mb-3 pb-1"
+            className="w-full xs:w-[35%] sm:w-[33%] border-b-2 mb-3 pb-1"
             placeholder="Give an email, get the newsletter."
           />
-          <Arrow className="absolute w-5 h-5 left-[94%] xs:left-[23%] mb-3 pointer-events-none" />
+          <Arrow className="absolute w-5 h-5 left-[94%] xs:left-[32%] xs:bottom-1 sm:left-[33%] mb-3 pointer-events-none" />
           <div className="absolute flex flex-start mt-16 xs:hidden">
             <br />
             <input
