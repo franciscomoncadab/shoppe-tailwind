@@ -32,7 +32,7 @@ function NavBar() {
       <div className="flex flex-wrap justify-between mx-auto w-full max-w-[4400px] h-full ">
         <a href="/" className="flex items-center ml-3">
           <Logo 
-            className="mt-2 h-7sm:h-9 content-start"
+            className="mt-2 h-7 sm:h-9 md:w-40 lg:w-48 xl:w-80 content-start"
             />
         </a>
         <a 
@@ -42,15 +42,15 @@ function NavBar() {
 
           }}
           >
-            <Car className="mt-2 mr-3"/>
+            <Car className="mt-2 mr-3 md:h-8 md:w-8 lg:h-10 lg:w-10"/>
 
             {!mobileMenu ? 
               <Menu 
-                className="mt-2 mr-3" 
+                className="mt-2 mr-3 md:h-8 md:w-8 lg:h-10 lg:w-10" 
                 onClick={() => {disableScroll()}}
               /> 
               : <Close 
-                className="mt-2 mr-3"
+                className="mt-2 mr-3 md:h-8 md:w-8 lg:h-10 lg:w-10"
                 onClick={() => {enableScroll()}}
               />}
             
@@ -58,43 +58,43 @@ function NavBar() {
 
         <ul className={`absolute z-30 bg-white top-24 xs:top-20 ${mobileMenu ? "left-0" : "-left-full"} w-full p-3 h-full flex-col ease-linear duration-[0.3s] sm:flex sm:justify-between sm:list-none sm:h-full`}>
           <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-            <a className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
+            <a href="/" className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
               Home
             </a>
           </li>
           <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-            <a className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
+            <a href="/" className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
               Shop
             </a>
           </li>
           <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-            <a  className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
+            <a href="/" className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
               About
             </a>
           </li>
           <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-            <a  className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
+            <a href="/" className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
               Blog
             </a>
           </li>
           <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-            <a  className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
+            <a href="/" className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
               Help
             </a>
           </li>
           <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-            <a  className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
+            <a href="/" className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
               Contact
             </a>
           </li>
           <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-            <a  className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
+            <a href="/" className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
               Search
             </a>
           </li>
           <hr className="w-[90%] opacity-30 mt-5 "/>
           <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-            <a  className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
+            <a href="/" className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
               <div className="flex space-between">
                 <User className="mr-1 sm:hidden"/>
                 My account
@@ -102,7 +102,7 @@ function NavBar() {
             </a>
           </li>
           <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-            <a  className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
+            <a href="/" className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer">
               <div className="flex space-between">
                 <Logout className="mr-1 sm:hidden"/>
                 Logout

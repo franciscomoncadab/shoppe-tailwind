@@ -10,15 +10,15 @@ function Footer() {
   };
 
   return (
-    <footer className="pt-10 sm:pt-0 sm:mt-52 sm:px-12">
-      {window.innerWidth > 753 ? <hr className="border-gray w-[97%] ml-5 xs:w-[95%]" /> : null}
-      <div className="p-4 bg-white xs:grid xs:grid-row-4">
-        <div className="relative flex items-center xs:left-[64%] xs:top-[28px] xs:z-10">
+    <footer className="footer">
+      {window.innerWidth > 753 ? <hr /> : null}
+      <div className="mx-3 bg-white xs:grid xs:grid-row-4">
+        <div className="footer__give">
           <input
-            className="w-full xs:w-[35%] sm:w-[33%] border-b-2 mb-3 pb-1"
+            className="footer__give-input"
             placeholder="Give an email, get the newsletter."
           />
-          <Arrow className="absolute w-5 h-5 left-[94%] xs:left-[32%] xs:bottom-1 sm:left-[33%] mb-3 pointer-events-none" />
+          <Arrow className="footer__give-arrow" />
           <div className="absolute flex flex-start mt-16 xs:hidden">
             <br />
             <input
@@ -32,24 +32,24 @@ function Footer() {
             </p>
           </div>
         </div>
-        <div className="mt-14 xs:mt-0 ">
-          <div className="grid grid-col gap-3 xs:grid-flow-col xs:justify-start xs:space-x-4 ">
+        <div className="footer__info">
+          <div className="footer__info-colum">
             <div>
-              <ul className="text-dark-gray hover:text-black">
+              <ul className="text-dark-gray md:text-xl xl:text-xxl hover:text-black">
                 <li className="mb-4">
                   <a href=".">CONTACT</a>
                 </li>
               </ul>
             </div>
             <div>
-              <ul className="text-dark-gray hover:text-black dark:text-gray-400">
+              <ul className="text-dark-gray md:text-xl xl:text-xxl hover:text-black">
                 <li className="mb-4">
                   <a href=".">TERMS OF SERVICES</a>
                 </li>
               </ul>
             </div>
             <div>
-              <ul className="text-dark-gray hover:text-black active:text-black dark:text-gray-400">
+              <ul className="text-dark-gray md:text-xl xl:text-xxl hover:text-black">
                 <li className="mb-4">
                   <a href=".">SHIPPING AND RETURNS</a>
                 </li>
@@ -58,7 +58,7 @@ function Footer() {
           </div>
         </div>
         
-        <div className="xs:flex xs:items-center xs:justify-between xs:flex-row-reverse xs:py-2">
+        <div className="footer__shelly">
           <div className="flex mt-2 mb-12 space-x-6 sm:justify-center xs:mr-14">
             <span className="relative flex flex-start xs:hidden">
               {" "}
@@ -66,9 +66,9 @@ function Footer() {
               {"   "}
               <span className="px-2 xs:hidden">_____</span>
             </span>
-            <a href="." className="text-dark-gray hover:text-black">
+            <a href="." className="text-dark-gray md:text-xl xl:text-xxl hover:text-black">
               <svg
-                className="w-5 h-5"
+                className="md:w-7 md:h-7 w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -83,10 +83,10 @@ function Footer() {
             </a>
             <a
               href="."
-              className="text-dark-gray  hover:text-black"
+              className="text-dark-gray md:text-xl xl:text-xxl  hover:text-black"
             >
               <svg
-                className="w-5 h-5"
+                className="md:w-7 md:h-7 w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -101,10 +101,10 @@ function Footer() {
             </a>
             <a
               href="."
-              className="text-dark-gray  hover:text-black"
+              className="text-dark-gray md:text-xl xl:text-xxl  hover:text-black"
             >
               <svg
-                className="w-5 h-5"
+                className="md:w-7 md:h-7 w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -114,12 +114,12 @@ function Footer() {
               <span className="sr-only">Twitter page</span>
             </a>
           </div>
-          <span className="text-sm text-dark-gray mb-4 xs:flex-start">
-            <a href="." className="text-dark-gray hover:underline">
+          <span className="text-sm text-dark-gray md:text-xl xl:text-xxl mb-4 xs:flex-start">
+            <a href="." className="text-dark-gray md:text-xl xl:text-xxl hover:underline">
               © 2021 Shelly
             </a>
             . Terms of use{" "}
-            <a href="." className="text-dark-gray">
+            <a href="." className="text-dark-gray md:text-xl xl:text-xxl">
               and
             </a>{" "}
             privacy policy.

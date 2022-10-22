@@ -42,14 +42,14 @@ function Carousel() {
         </Swiper>
       </div>
       <div className="relative z-0">
-        <p className="absolute z-10 text-white mt-[270px] text-2xl pl-6 xs:pl-12">
+        <p className="absolute z-10 text-white mt-[270px] md:mt-[300px] lg:mt-[330px] text-2xl md:text-3xl lg:text-4xl xl:text-5xl pl-6 xs:pl-12">
           Gold Big Hoops{" "}
         </p>
         <br />
-        <p className="absolute z-10 text-white text-xs mt-[286px] pl-6 xs:pl-12">
+        <p className="absolute z-10 text-white text-xs md:text-base lg:text-lg xl:text-xl mt-[286px] md:mt-[320px] lg:mt-[360px] pl-6 xs:pl-12">
           $ 68.00
         </p>
-        <button className="absolute z-10 rounded-md border-solid border-l-2 border-r-2 border-x-2 border-y-2 xs:ml-12 text-white text-center mt-[320px] ml-6 p-2 xs:px-4">
+        <button className="absolute z-10 rounded-md border-solid border-l-2 border-r-2 border-x-2 border-y-2 xs:ml-12 text-white text-center md:text-lg lg:text-xl xl:text-2xl mt-[320px] md:mt-[366px] lg:mt-[400px] ml-6 p-2 lg:p-4 xl:p-6 xs:px-4">
           {" "}
           View Product
         </button>
@@ -63,22 +63,22 @@ function Carousel() {
             clickable: true,
           }}
           modules={[Pagination, Navigation, Autoplay]}
-          className="swiper p-3 -top-5"
+          className="swiper p-3 -top-5 rounded-md"
         >
           <SwiperSlide className="z-10">
-            <img src={window.innerWidth < 873 ? "./images/img1.png" : "./images/img01.png"} alt="imagen1" className="rounded-lg" />
+            <img src={window.innerWidth < 873 ? "./images/img1.png" : "./images/img01.png"} alt="imagen1" />
           </SwiperSlide>
           <SwiperSlide className="z-10">
-            <img src="./images/img2.jpg" alt="imagen2" className="rounded-lg" />
+            <img src="./images/img2.jpg" alt="imagen2"  />
           </SwiperSlide>
           <SwiperSlide className="z-10">
-            <img src="./images/img3.jpg" alt="imagen3" className="rounded-lg" />
+            <img src="./images/img3.jpg" alt="imagen3"  />
           </SwiperSlide>
           <SwiperSlide className="z-10">
-            <img src="./images/img4.jpg" alt="imagen4" className="rounded-lg" />
+            <img src="./images/img4.jpg" alt="imagen4"  />
           </SwiperSlide>
           <SwiperSlide className="z-10">
-            <img src="./images/img5.jpg" alt="imagen5" className="rounded-lg" />
+            <img src="./images/img5.jpg" alt="imagen5"  />
           </SwiperSlide>
         </Swiper>
       </div>

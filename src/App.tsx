@@ -10,7 +10,7 @@ function App() {
     <div>
       <NavBar />
       <LandingPage />
-     
+      {/* <p>{window.innerWidth}  </p> */}
       <Footer />
     </div>
   );
