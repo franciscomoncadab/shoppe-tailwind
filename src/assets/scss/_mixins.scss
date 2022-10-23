@@ -23,13 +23,14 @@
    }
    
    $breakpoints: (
-     3xs: 350px,
-     2xs: 420px,
-     xs: 576px,
-     sm: 768px,
-     md: 992px,
-     lg: 1280px,
-     xl: 1440px,
+     3xs: 268px,
+     2xs: 380px,
+     xs: 470px,
+     sm: 968px,
+     md: 1024px,
+     lg: 1440px,
+     xl: 1728px,
+     2xl: 1920px,
    );
    
    @mixin respond-below($breakpoint) {

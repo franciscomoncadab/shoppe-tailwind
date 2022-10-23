@@ -3,50 +3,53 @@ import "../assets/scss/main.scss";
 import { ReactComponent as Arrow } from "../assets/icons/arrow.svg";
 
 function Footer() {
-  const [check, setCheck] = useState<boolean>(false)
+  const [check, setCheck] = useState<boolean>(false);
 
   const handleChange = (e: any) => {
     setCheck(e.target.checked);
-  } 
+  };
 
   return (
-    <footer className="pt-10">
-      <div className="p-4 bg-white sm:p-6">
-        {/* <hr className="my-6 border-gray sm:mx-auto" /> */}
-        <div className="relative flex items-center">
+    <footer className="footer">
+      {window.innerWidth > 753 ? <hr /> : null}
+      <div className="mx-3 bg-white xs:grid xs:grid-row-4">
+        <div className="footer__give">
           <input
-            className="w-full border-b-2 mb-3 pb-1"
+            className="footer__give-input"
             placeholder="Give an email, get the newsletter."
           />
-          <Arrow className="absolute w-5 h-5 ml-[360px] mb-3 pointer-events-none" />
-          <div className="absolute flex flex-start mt-16">
+          <Arrow className="footer__give-arrow" />
+          <div className="absolute flex flex-start mt-16 xs:hidden">
             <br />
-            <input 
+            <input
               type="checkbox"
               value="check"
               onChange={handleChange}
               checked={check}
-            /> <p className="font-medium mb-1 ml-1">i agree to the website's terms and conditions</p>
+            />{" "}
+            <p className="font-medium mb-1 ml-1">
+              i agree to the website's terms and conditions
+            </p>
           </div>
         </div>
-        <div className="mt-14 md:flex md:justify-between">
-          <div className="grid grid-col gap-3 sm:grid sm:grid-row-3 sm:grid-flow-col sm:gap-3">
+        <div className="footer__info">
+          <div className="footer__info-colum">
             <div>
-              <ul className="text-dark-gray hover:text-black">
+              <ul className="text-dark-gray md:text-xl xl:text-xxl hover:text-black">
                 <li className="mb-4">
                   <a href=".">CONTACT</a>
                 </li>
               </ul>
             </div>
             <div>
-              <ul className="text-dark-gray hover:text-black dark:text-gray-400">
+              <ul className="text-dark-gray md:text-xl xl:text-xxl hover:text-black">
                 <li className="mb-4">
                   <a href=".">TERMS OF SERVICES</a>
                 </li>
               </ul>
             </div>
             <div>
-              <ul className="text-dark-gray hover:text-black active:text-black dark:text-gray-400">
+              <ul className="text-dark-gray md:text-xl xl:text-xxl hover:text-black">
                 <li className="mb-4">
                   <a href=".">SHIPPING AND RETURNS</a>
                 </li>
@@ -54,18 +57,18 @@ function Footer() {
             </div>
           </div>
         </div>
-        <br />
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <div className="flex mt-2 mb-12 space-x-6 sm:justify-center sm:mt-0">
-            <span className="relative flex flex-start">
+        
+        <div className="footer__shelly">
+          <div className="flex mt-2 mb-12 space-x-6 sm:justify-center xs:mr-14">
+            <span className="relative flex flex-start xs:hidden">
               {" "}
               Follow us
               {"   "}
-              <span>_____</span>
+              <span className="px-2 xs:hidden">_____</span>
             </span>
-            <a href="." className="text-dark-gray hover:text-gray-900">
+            <a href="." className="text-dark-gray md:text-xl xl:text-xxl hover:text-black">
               <svg
-                className="w-5 h-5"
+                className="md:w-7 md:h-7 w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -80,10 +83,10 @@ function Footer() {
             </a>
             <a
               href="."
-              className="text-dark-gray hover:text-gray-900 dark:hover:text-white"
+              className="text-dark-gray md:text-xl xl:text-xxl  hover:text-black"
             >
               <svg
-                className="w-5 h-5"
+                className="md:w-7 md:h-7 w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -98,10 +101,10 @@ function Footer() {
             </a>
             <a
               href="."
-              className="text-dark-gray hover:text-gray-900 dark:hover:text-white"
+              className="text-dark-gray md:text-xl xl:text-xxl  hover:text-black"
             >
               <svg
-                className="w-5 h-5"
+                className="md:w-7 md:h-7 w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -111,12 +114,12 @@ function Footer() {
               <span className="sr-only">Twitter page</span>
             </a>
           </div>
-          <span className="text-sm text-dark-gray mb-4 sm:text-center dark:text-gray-400">
-            <a href="." className="text-dark-gray hover:underline">
+          <span className="text-sm text-dark-gray md:text-xl xl:text-xxl mb-4 xs:flex-start">
+            <a href="." className="text-dark-gray md:text-xl xl:text-xxl hover:underline">
               © 2021 Shelly
             </a>
             . Terms of use{" "}
-            <a href="." className="text-dark-gray">
+            <a href="." className="text-dark-gray md:text-xl xl:text-xxl">
               and
             </a>{" "}
             privacy policy.

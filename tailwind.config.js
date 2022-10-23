@@ -13,13 +13,16 @@ module.exports = {
       'light-gray': '#EFEFEF',
       'errors': '#D82700'
     },
-    extend: {
-      screens: {
-        sm: '480px',
-        md: '1440px',
-        lg: '3072px',
-        xl: '3840px',
-      },  
+    screens: {
+      'xs': '480px',
+      'sm': '1250px',
+      'md': '1400px',
+      'ml': '1820px',
+      'lg': '2200px',
+      'xl': '3070px',
+      'xxl': '3820px'
+    },
+    extend: {  
     },
   },
   plugins: [],
