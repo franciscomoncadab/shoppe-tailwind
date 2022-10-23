@@ -1,0 +1,88 @@
+.footer {
+     @apply
+     pt-10
+     sm:pt-0
+     sm:mt-52
+     sm:px-12;
+
+          hr {
+               @apply
+               border-gray
+               w-[96%] 
+               mx-3 
+               sm:w-[98%]
+               md:w-[99%];         
+
+          }
+
+
+          &__give{
+               @apply
+               relative
+               flex
+               items-center
+               xs:left-[64%] 
+               xs:top-[28px] 
+               xs:z-10;
+          
+
+               &-input{
+                    @apply
+                    w-full
+                    xs:w-[35%] 
+                    sm:w-[36%]
+                    md:w-[36.5%]
+                    md:text-lg
+                    ml:w-[36.4%]
+                    lg:w-[35.9%]
+                    lg:text-xl
+                    xl:w-[35.8%]
+                    xxl:w-[35.7%]
+                    xxl:text-2xl
+                    border-b-2 
+                    mb-3 
+                    pb-1;
+               }
+
+               &-arrow {
+                    @apply
+                    absolute 
+                    w-5 
+                    h-5 
+                    right-[1%] 
+                    bottom-[40%] 
+                    xs:right-[65%] 
+                    xs:bottom-5
+                    sm:right-[64%]
+                    md:right-[64%]
+                    ml:right-[63.7%]
+                    lg:right-[64.1%]
+                    xl:right-[64.3%]
+                    pointer-events-none;
+               }
+          }
+
+          &__info {
+               @apply
+               mt-14
+               xs:mt-0;
+
+               &-colum {
+                  @apply
+                  grid 
+                  gap-3 
+                  xs:grid-flow-col 
+                  xs:justify-start 
+                  xs:space-x-4;
+               }
+          }
+
+          &__shelly {
+               @apply
+               xs:flex
+               xs:items-center
+               xs:justify-between
+               xs:flex-row-reverse
+               xs:py-2;
+          }
+}
