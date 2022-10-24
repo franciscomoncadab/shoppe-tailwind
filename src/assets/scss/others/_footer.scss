@@ -22,10 +22,10 @@
                flex
                items-center
                sm:m-0
-               xs:w-[36.8%]
-               xs:left-[64%] 
-               xs:top-[28px]
-               xs:z-10;
+               sx:w-[36.8%]
+               sx:left-[64%] 
+               sx:top-[28px]
+               sx:z-10;
           
 
                &-input{
@@ -68,15 +68,15 @@
           &__info {
                @apply
                mt-14
-               xs:mt-0;
+               sx:mt-0;
 
                &-colum {
                   @apply
                   grid 
                   gap-3 
-                  xs:grid-flow-col 
-                  xs:justify-start 
-                  xs:space-x-4;
+                  sx:grid-flow-col 
+                  sx:justify-start 
+                  sx:space-x-4;
                }
           }
 

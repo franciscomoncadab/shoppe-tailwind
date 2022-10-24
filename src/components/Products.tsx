@@ -40,7 +40,7 @@ function Products() {
             <p className="product__grid-price">{window.innerWidth < 767 ? "$ 30,00" : "$ 25,00"}</p>
           </div>
         </div>
-        <div className="relative p-2 rounded-md col-span-2 z-0 xs:hidden">
+        <div className="relative p-2 rounded-md col-span-2 z-0 sx:hidden">
           <div className="absolute z-10 top-[8%] xs:top-[5%] ml-1.5">
             <span className="bg-gold text-white text-xs mr-2 px-2.5 py-1.5 rounded ">
               Earring

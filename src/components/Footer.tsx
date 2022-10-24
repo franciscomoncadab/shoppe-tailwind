@@ -12,14 +12,14 @@ function Footer() {
   return (
     <footer className="footer">
       {window.innerWidth > 753 ? <hr /> : null}
-      <div className="mx-3 bg-white xs:grid xs:grid-row-4">
+      <div className="mx-3 bg-white sx:grid sx:grid-row-4">
         <div className="footer__give">
           <input
             className="footer__give-input"
             placeholder="Give an email, get the newsletter."
           />
           <Arrow className="footer__give-arrow" />
-          <div className="absolute flex flex-start mt-16 xs:hidden">
+          <div className="absolute flex flex-start mt-16 sx:hidden">
             <br />
             <input
               type="checkbox"
@@ -28,7 +28,7 @@ function Footer() {
               checked={check}
             />{" "}
             <p className="font-medium mb-1 ml-1">
-              i agree to the website's terms and conditions
+              I agree to the website's terms and conditions
             </p>
           </div>
         </div>
