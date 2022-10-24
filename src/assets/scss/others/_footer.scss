@@ -21,23 +21,25 @@
                relative
                flex
                items-center
+               sm:m-0
+               xs:w-[36.8%]
                xs:left-[64%] 
-               xs:top-[28px] 
+               xs:top-[28px]
                xs:z-10;
           
 
                &-input{
                     @apply
                     w-full
-                    xs:w-[35%] 
-                    sm:w-[36%]
-                    md:w-[36.5%]
+                    xs:mr-3
+                    sm:mr-2
+                    md:mr-0
+                    ml:mr-2
+                    lg:mr-5
+                    xl:mr-7
+                    xxl:mr-11
                     md:text-lg
-                    ml:w-[36.4%]
-                    lg:w-[35.9%]
-                    lg:text-xl
-                    xl:w-[35.8%]
-                    xxl:w-[35.7%]
+                    lg:text-xl                    
                     xxl:text-2xl
                     border-b-2 
                     mb-3 
@@ -48,16 +50,17 @@
                     @apply
                     absolute 
                     w-5 
-                    h-5 
-                    right-[1%] 
+                    h-5
+                    right-[1%]                   
                     bottom-[40%] 
-                    xs:right-[65%] 
+                    xs:right-[5%]
+                    sm:right-[2%]
+                    ml:right-[1.7%]
+                    md:right-[0.5%]
+                    lg:right-[2.5%]
+                    xl:right-[2.8%]
                     xs:bottom-5
-                    sm:right-[64%]
-                    md:right-[64%]
-                    ml:right-[63.7%]
-                    lg:right-[64.1%]
-                    xl:right-[64.3%]
+                    xxl:right-[3.5%]                    
                     pointer-events-none;
                }
           }
