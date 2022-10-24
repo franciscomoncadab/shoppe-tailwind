@@ -59,12 +59,12 @@ function Footer() {
         </div>
         
         <div className="footer__shelly">
-          <div className="flex mt-2 mb-12 space-x-6 sm:justify-center xs:mr-14">
-            <span className="relative flex flex-start xs:hidden">
+          <div className="flex mt-2 mb-12 space-x-6 sm:justify-center sx:mr-14">
+            <span className="relative flex flex-start sx:hidden">
               {" "}
               Follow us
               {"   "}
-              <span className="px-2 xs:hidden">_____</span>
+              <span className="px-2 sx:hidden">_____</span>
             </span>
             <a href="." className="text-dark-gray md:text-xl xl:text-xxl hover:text-black">
               <svg
@@ -114,7 +114,7 @@ function Footer() {
               <span className="sr-only">Twitter page</span>
             </a>
           </div>
-          <span className="text-sm text-dark-gray md:text-xl xl:text-xxl mb-4 xs:flex-start">
+          <span className="text-sm text-dark-gray md:text-xl xl:text-xxl mb-4 sx:flex-start">
             <a href="." className="text-dark-gray md:text-xl xl:text-xxl hover:underline">
               © 2021 Shelly
             </a>
