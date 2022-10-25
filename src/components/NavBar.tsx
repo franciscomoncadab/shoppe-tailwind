@@ -6,6 +6,8 @@ import { ReactComponent as Logout } from "../assets/icons/logout.svg";
 import { ReactComponent as Close } from "../assets/icons/close.svg";
 import { ReactComponent as Car } from "../assets/icons/car.svg";
 import NavBarDesk from "./NavBarDesk";
+import { Link } from "react-router-dom";
+import { HOME, DETAILS, NOTFOUND} from "../routes/routes"
 
 function NavBar() {
   const [mobileMenu, setMobileMenu] = useState<boolean>(false);
@@ -30,9 +32,9 @@ function NavBar() {
     <nav className="w-full h-full sm:px-12 sm:pt-10">
       {window.innerWidth < 873 ? (
         <div className="flex flex-wrap justify-between mx-auto w-full max-w-[4400px] h-full ">
-          <a href="/" className="flex items-center ml-3">
+          <Link to={HOME} className="flex items-center ml-3">
             <Logo className="mt-2 h-7 sm:h-9 md:w-40 lg:w-48 xl:w-80 content-start" />
-          </a>
+          </Link>
           <a
             className="flex items-center"
             onClick={() => {
@@ -64,83 +66,83 @@ function NavBar() {
             } w-full p-3 h-full flex-col ease-linear duration-[0.3s] sm:flex sm:justify-between sm:list-none sm:h-full`}
           >
             <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-              <a
-                href="/"
+              <Link
+                to={HOME}
                 className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-              <a
-                href="/"
+              <Link
+                to={DETAILS}
                 className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer"
               >
                 Shop
-              </a>
+              </Link>
             </li>
             <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-              <a
-                href="/"
+              <Link
+                to={NOTFOUND}
                 className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-              <a
-                href="/"
+              <Link
+                to={NOTFOUND}
                 className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer"
               >
                 Blog
-              </a>
+              </Link>
             </li>
             <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-              <a
-                href="/"
+              <Link
+                to={NOTFOUND}
                 className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer"
               >
                 Help
-              </a>
+              </Link>
             </li>
             <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-              <a
-                href="/"
+              <Link
+                to={NOTFOUND}
                 className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer"
               >
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-              <a
-                href="/"
+              <Link
+                to={NOTFOUND}
                 className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer"
               >
                 Search
-              </a>
+              </Link>
             </li>
             <hr className="w-[90%] opacity-30 mt-5 " />
             <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-              <a
-                href="/"
+              <Link
+                to={NOTFOUND}
                 className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer"
               >
                 <div className="flex space-between">
                   <User className="mr-1 sm:hidden" />
                   My account
                 </div>
-              </a>
+              </Link>
             </li>
             <li className="flex justify-center items-center w-full h-[70px] sm:h-full">
-              <a
-                href="/"
+              <Link
+                to={NOTFOUND}
                 className="w-full sm:flex sm:justify-center sm:items-center sm:h-full sm:p-1 text-black font-semibold text-base cursor-pointer"
               >
                 <div className="flex space-between">
                   <Logout className="mr-1 sm:hidden" />
                   Logout
                 </div>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
