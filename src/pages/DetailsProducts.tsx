@@ -7,19 +7,19 @@ function DetailsProducts() {
       <div className="flex justify-between gap-7 p-1">
         <ul className="flex flex-col gap-7">
           <li>
-            <img className="w-[90px] h-[90px] rounded-md" src={product1} />
+            <img className="w-[90px] h-[90px] rounded-md" src={product1} alt="img1" />
           </li>
           <li>
-            <img className="w-[90px] h-[90px] rounded-md" src={product1} />
+            <img className="w-[90px] h-[90px] rounded-md" src={product1} alt="img2" />
           </li>
           <li>
-            <img className="w-[90px] h-[90px] rounded-md" src={product1} />
+            <img className="w-[90px] h-[90px] rounded-md" src={product1} alt="img3" />
           </li>
           <li>
-            <img className="w-[90px] h-[90px] rounded-md" src={product1} />
+            <img className="w-[90px] h-[90px] rounded-md" src={product1} alt="img4" />
           </li>
         </ul>
-        <img className="w-[450px] h-[450px] rounded-md" src={product1} />
+        <img className="w-[450px] h-[450px] rounded-md" src={product1} alt="img5" />
       </div>
       <div className="flex flex-col mr-24">
         <h1 className="text-2xl font-medium">Lira Earrings</h1>
