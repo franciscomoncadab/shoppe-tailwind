@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import IconsProducts from "../atoms/IconsProducts";
 import Rating from "../atoms/Rating";
+import "../../assets/scss/main.scss";
 
 function TextProducts() {
   const [counter, setcounter] = useState(1);
@@ -13,10 +14,10 @@ function TextProducts() {
   }
 
   return (
-    <div className="absolute left-[50%] w-[50%] px-14">
-      <h1 className="text-2xl font-medium">Lira Earrings</h1>
-      <h3 className="text-lg text-gold py-5">$ 20.00</h3>
-      <div className="flex flex-row items-start space-x-5">
+    <div className="textProducts">
+      <h1 className="textProducts__product">Lira Earrings</h1>
+      <h3 className="textProducts__price">$ 20.00</h3>
+      <div className="textProducts__rating">
           <Rating />
           <p className="text-dark-gray font-sm">1 customer review</p>
       </div>
@@ -26,8 +27,8 @@ function TextProducts() {
         maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis
         consequat sed eu felis.{" "}
       </p>
-      <div className="flex justify-start space-x-8 py-10">
-        <div className="bg-light-gray flex flex-row rounded-md">
+      <div className="textProducts__addCar">
+        <div className="textProducts__addCar-counter">
           <input
             className="items-center text-black text-base w-7 cursor-pointer hover:bg-gray rounded-md"
             type="button"

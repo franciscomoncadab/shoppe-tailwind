@@ -1,0 +1,44 @@
+.textProducts {
+     @apply
+     absolute
+     left-[50%] 
+     w-[50%] 
+     px-14;
+
+     &__product{
+          @apply
+          text-2xl
+          font-medium;
+     }
+
+     &__price{
+          @apply
+          text-lg
+          text-gold
+          py-5;
+     }
+
+     &__rating{
+          @apply
+          flex
+          flex-row
+          items-center
+          space-x-5;
+     }
+
+     &__addCar{
+          @apply
+          flex
+          justify-start
+          space-x-8
+          py-10;
+
+          &-counter{
+               @apply
+               bg-light-gray
+               flex
+               flex-row
+               rounded-md;
+          }
+     }
+}
