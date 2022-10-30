@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import IconsProducts from "../atoms/IconsProducts";
+import { ReactComponent as Share } from "../../assets/icons/share.svg";
 import Rating from "../atoms/Rating";
 import "../../assets/scss/main.scss";
 
@@ -15,13 +16,22 @@ function TextProducts() {
 
   return (
     <div className="textProducts">
-      <h1 className="textProducts__product">Lira Earrings</h1>
-      <h3 className="textProducts__price">$ 20.00</h3>
+      <h1 className="textProducts__product">{window.innerWidth < 873 ? 'Hal Earrings': 'Lira Earrings'}</h1>
+      <span className="textProducts__price">
+        {window.innerWidth < 873 ? 
+        <div className="flex flex-row justify-between text-xl"> 
+          <p>$ 25.00</p>
+          <a>
+            <Share />
+          </a>
+        </div>
+        : "$ 20,00"}
+        </span>
       <div className="textProducts__rating">
           <Rating />
           <p className="text-dark-gray font-sm">1 customer review</p>
       </div>
-      <p className="text-sm p-1 pr-10 text-dark-gray">
+      <p className="hidden sm:text-sm sm:p-1 sm:pr-10 sm:text-dark-gray">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
         placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a
         maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis
@@ -45,14 +55,19 @@ function TextProducts() {
             }}
           />
         </div>
-        <button className="border-2 px-20 w-[73%] rounded-md">
-          <Link to="*" className="">
+        <button className="mt-9 mb-6 border-2 py-2 rounded-md w-full sm:border-2 sm:px-20 sm:w-[73%] sm:rounded-md">
+          <Link to="*" className="text-base">
             ADD TO CART
           </Link>
         </button>
+        {window.innerWidth < 873 && 
+        <p className="text-sm text-dark-gray">
+          Lorem ipsum dolor sit amet, consectetur adipisce 
+          elit. Aliquam placerat ...
+        </p>}
       </div>
       <IconsProducts />
-      <div className="flex flex-col pt-8">
+      <div className="hidden sm:flex sm:flex-col sm:pt-8">
         <span className="flex">
           <p className="text-black text-lg">SKU:</p>
           <p className="text-dark-gray text-lg px-5"> 12</p>
@@ -62,6 +77,7 @@ function TextProducts() {
           <p className="text-dark-gray text-lg px-5"> Fashion, Style</p>
         </span>
       </div>
+      <hr className="my-3 text-gray sm:hidden" />
     </div>
   );
 }

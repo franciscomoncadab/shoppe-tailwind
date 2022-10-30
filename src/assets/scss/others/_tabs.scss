@@ -1,0 +1,29 @@
+.tabs-container{
+     @apply
+     sm:text-sm
+     sm:font-medium
+     sm:text-center
+     sm:text-dark-gray
+     sm:border-b
+     sm:border-gray
+     sm:p-12
+     sm:mt-16;
+
+     &__list{
+          @apply
+          sm:flex
+          sm:flex-wrap
+          sm:text-xl
+          sm:-mb-12;
+
+          &-links{
+               @apply
+               sm:inline-block
+               sm:p-4
+               sm:rounded-t-lg
+               sm:focus:border-b-2
+               sm:focus:text-black
+               sm:focus:border-black
+          }
+     }
+}

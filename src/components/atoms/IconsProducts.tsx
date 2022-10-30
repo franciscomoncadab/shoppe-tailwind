@@ -8,7 +8,7 @@ import Line from "../../assets/images/LineIcon.png";
 
 function IconsProducts() {
      return ( 
-          <div className="flex justify-start space-x-9 pt-9 ">
+          <div className="hidden sm:flex sm:justify-start sm:space-x-9 sm:pt-9 ">
                <Heart className="cursor-pointer" />
                <img src={Line} alt="line"/>
                <Mail className="cursor-pointer" />

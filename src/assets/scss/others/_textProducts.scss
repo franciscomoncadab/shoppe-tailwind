@@ -1,44 +1,51 @@
 .textProducts {
      @apply
-     absolute
-     left-[50%] 
-     w-[50%] 
-     px-14;
+     px-3
+     w-full
+     sm:absolute
+     sm:left-[50%] 
+     sm:w-[50%] 
+     sm:px-14;
 
      &__product{
           @apply
           text-2xl
-          font-medium;
+          font-medium
+          py-3
+          sm:font-medium;
      }
 
      &__price{
           @apply
-          text-lg
           text-gold
-          py-5;
+          sm:text-lg
+          sm:py-5;
      }
 
      &__rating{
           @apply
-          flex
-          flex-row
-          items-center
-          space-x-5;
+          hidden
+          sm:flex
+          sm:flex-row
+          sm:items-center
+          sm:space-x-5;
      }
 
      &__addCar{
           @apply
-          flex
-          justify-start
-          space-x-8
-          py-10;
+          w-full
+          sm:flex
+          sm:justify-start
+          sm:space-x-8
+          sm:py-10;
 
           &-counter{
                @apply
-               bg-light-gray
-               flex
-               flex-row
-               rounded-md;
+               hidden
+               sm:bg-light-gray
+               sm:flex
+               sm:flex-row
+               sm:rounded-md;
           }
      }
 }

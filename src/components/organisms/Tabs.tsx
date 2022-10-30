@@ -1,13 +1,14 @@
 import React from "react";
+import "../../assets/scss/main.scss";
 
 function Tags() {
   return (
-    <div className="text-sm font-medium text-center text-dark-gray border-b border-gray p-12 mt-16">
-      <ul className="flex flex-wrap text-xl -mb-12">
+    <div className="tabs-container">
+      <ul className="tabs-container__list">
         <li className="mr-2">
           <a
             href="#"
-            className="inline-block p-4 rounded-t-lg focus:border-b-2 focus:text-black focus:border-black"
+            className="tabs-container__list-links"
           >
             Description
           </a>
@@ -15,8 +16,8 @@ function Tags() {
         <li className="mr-2">
           <a
             href="#"
-            className="inline-block p-4 rounded-t-lg focus:border-b-2 focus:text-black focus:border-black"
-            aria-current="page"
+            className="tabs-container__list-links"
+            
           >
             Aditional Information
           </a>
@@ -24,12 +25,13 @@ function Tags() {
         <li className="mr-2">
           <a
             href="#"
-            className="inline-block p-4 rounded-t-lg focus:border-b-2 focus:text-black focus:border-black"
+            className="tabs-container__list-links"
           >
             Reviews(0)
           </a>
         </li>
       </ul>
+      <hr className="my-3 text-gray sm:hidden" />
     </div>
   );
 }
