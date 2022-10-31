@@ -1,5 +1,7 @@
 .tabs-container{
      @apply
+     w-full
+     mx-3
      sm:text-sm
      sm:font-medium
      sm:text-center
@@ -11,6 +13,7 @@
 
      &__list{
           @apply
+          py-2
           sm:flex
           sm:flex-wrap
           sm:text-xl
@@ -18,6 +21,7 @@
 
           &-links{
                @apply
+               text-base
                sm:inline-block
                sm:p-4
                sm:rounded-t-lg

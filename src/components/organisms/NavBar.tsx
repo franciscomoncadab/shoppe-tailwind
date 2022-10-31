@@ -40,7 +40,7 @@ function NavBar() {
             onClick={() => {
               setMobileMenu(!mobileMenu);
             }}
-            href="*"
+            href="#"
           >
             <Car className="mt-2 mr-3 md:h-8 md:w-8 lg:h-10 lg:w-10" />
 

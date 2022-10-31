@@ -16,22 +16,30 @@ function TextProducts() {
 
   return (
     <div className="textProducts">
-      <h1 className="textProducts__product">{window.innerWidth < 873 ? 'Hal Earrings': 'Lira Earrings'}</h1>
+      <h1 className="textProducts__product">
+        {window.innerWidth < 873 ? "Hal Earrings" : "Lira Earrings"}
+      </h1>
       <span className="textProducts__price">
-        {window.innerWidth < 873 ? 
-        <div className="flex flex-row justify-between text-xl"> 
-          <p>$ 25.00</p>
-          <a>
-            <Share />
-          </a>
-        </div>
-        : "$ 20,00"}
-        </span>
+        {window.innerWidth < 873 ? (
+          <div className="flex flex-row justify-between text-xl">
+            <p>$ 25.00</p>
+            <a>
+              <Share />
+            </a>
+          </div>
+        ) : (
+          "$ 20,00"
+        )}
+      </span>
       <div className="textProducts__rating">
-          <Rating />
-          <p className="text-dark-gray font-sm">1 customer review</p>
+        <Rating />
+        <p className="text-dark-gray font-sm">1 customer review</p>
       </div>
-      <p className="hidden sm:text-sm sm:p-1 sm:pr-10 sm:text-dark-gray">
+      <p
+        className={`${
+          window.innerWidth < 873 ? "hidden" : "visible"
+        } sm:text-sm sm:p-1 sm:pr-10 sm:text-dark-gray`}
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
         placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a
         maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis
@@ -45,7 +53,7 @@ function TextProducts() {
             value="-"
             onClick={handlerCounter}
           />
-          <p className="justify-center text-black text-base p-4">{counter}</p>
+          <p className="justify-center item-center text-black text-base p-4">{counter}</p>
           <input
             className="items-center text-black text-base w-7 cursor-pointer hover:bg-gray rounded-md"
             type="button"
@@ -60,11 +68,15 @@ function TextProducts() {
             ADD TO CART
           </Link>
         </button>
-        {window.innerWidth < 873 && 
-        <p className="text-sm text-dark-gray">
-          Lorem ipsum dolor sit amet, consectetur adipisce 
-          elit. Aliquam placerat ...
-        </p>}
+        {window.innerWidth < 873 && (
+          <div>
+            <p className="text-sm text-dark-gray">
+              Lorem ipsum dolor sit amet, consectetur adipisce elit. Aliquam
+              placerat ...
+            </p>
+            <span className="flex flex-row text-gold text-base py-4"> View more <p className="px-1 mb-3 text-black text-xl"> {">"}</p></span>
+          </div>
+        )}
       </div>
       <IconsProducts />
       <div className="hidden sm:flex sm:flex-col sm:pt-8">

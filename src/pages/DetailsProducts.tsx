@@ -6,7 +6,7 @@ function DetailsProducts() {
   return (
     <>
       <DetailsImage />
-      <div className="mx-12">
+      <div className="sm:mx-12">
         <Tabs />
       </div>
     </>
