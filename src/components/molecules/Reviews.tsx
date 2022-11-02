@@ -5,7 +5,7 @@ import TextReview from "../atoms/TextReview";
 
 function Reviews() {
   return (
-    <div className="flex flex-row justify-between mb-[96px] w-full">
+    <div className="flex flex-col-2 justify-between h-full w-full">
       <TextReview />
       <FormReview />
     </div>

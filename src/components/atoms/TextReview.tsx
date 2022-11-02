@@ -3,7 +3,7 @@ import stars from "../../assets/images/stars.png";
 
 function TextReview() {
   return (
-    <div className="flex flex-col w-[50%] mr-[44px]">
+    <div className="flex flex-col w-[50%] mr-[44px] h-[641px] mb-[86px]">
       <div>
         <div className="text-base">
           <h2 className="text-[20px] mb-[76px] mt-[42px]">

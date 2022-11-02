@@ -11,12 +11,12 @@ const Rating = () => {
           <button
                type="button"
                key={index}
-               className={`bg-transparent border-none outline-none cursor-pointer ${index <= (hover || rating) ? "text-black" : "text-gold"}`}
+               className={`bg-transparent border-none outline-none cursor-pointer ${index <= (hover || rating) ? "text-black" : "text-dark-gray"}`}
                onClick={() => setRating(index)}
                onMouseEnter={() => setHover(index)}
                onMouseLeave={() => setHover(rating)}
           >
-            <span className="star text-lg">&#9733;</span>
+            <span className="star text-2xl">&#9733;</span>
           </button>
         );
       })}
