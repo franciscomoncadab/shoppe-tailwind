@@ -34,12 +34,9 @@ function FormReview() {
         </div>
         <div>
           <p className="font-normal text-[14px] text-dark-gray mb-[13.39px]">Your Rating*</p>
-          <div>
+          <div className=" mb-[48.6px]">
           <Ratings 
             className="absolute mt-[6px]"
-          />
-          <Rating 
-            color="text-white"
           />
           </div>
         </div>

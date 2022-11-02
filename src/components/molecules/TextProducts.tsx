@@ -17,10 +17,10 @@ function TextProducts() {
   return (
     <div className="textProducts">
       <h1 className="textProducts__product">
-        {window.innerWidth < 873 ? "Hal Earrings" : "Lira Earrings"}
+        {window.innerWidth < 767 ? "Hal Earrings" : "Lira Earrings"}
       </h1>
       <span className="textProducts__price">
-        {window.innerWidth < 873 ? (
+        {window.innerWidth < 767 ? (
           <div className="flex flex-row justify-between text-xl">
             <p>$ 25.00</p>
             <Link to="#">
@@ -39,8 +39,8 @@ function TextProducts() {
       </div>
       <p
         className={`${
-          window.innerWidth < 873 ? "hidden" : "visible"
-        } sm:text-[16px] sm:font-normal sm:mt-[19px] sm:pr-10 sm:text-dark-gray`}
+          window.innerWidth < 767 ? "hidden" : "visible"
+        } sm:text-[16px] sm:font-normal sm:mt-[19px] sm:text-dark-gray`}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
         placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a
@@ -70,7 +70,7 @@ function TextProducts() {
             ADD TO CART
           </Link>
         </button>
-        {window.innerWidth < 873 && (
+        {window.innerWidth < 767 && (
           <div>
             <p className="text-sm text-dark-gray">
               Lorem ipsum dolor sit amet, consectetur adipisce elit. Aliquam
@@ -81,7 +81,7 @@ function TextProducts() {
         )}
       </div>
       <IconsProducts />
-      <div className="hidden sm:flex sm:flex-col sm:pt-8">
+      <div className="hidden sm:flex sm:flex-col sm:pt-8 sm:mt-[38px]">
         <span className="flex">
           <p className="text-black text-lg">SKU:</p>
           <p className="text-dark-gray text-lg px-5"> 12</p>

@@ -5,13 +5,17 @@
      h-full
      sm:flex
      sm:flex-col
+     ml:gap-3
      sm:w-[490px]
+     md:w-[41.72%]
      sm:px-0;
 
      &__product{
           @apply
           text-2xl
           font-medium
+          mt-[40px]
+          sm:mt-0
           sm:font-medium
           sm:mb-[23px]
           sm:text-[26px];

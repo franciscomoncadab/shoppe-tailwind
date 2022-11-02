@@ -19,12 +19,12 @@ function SimilarItems() {
       <h1 className="my-2 text-[16px] px-3 font-normal sm:px-12 sm:text-[26px] sm:my-7">Similar Items</h1>
       <Swiper
         loop={true}
-        spaceBetween={window.innerWidth < 560 ? 10 : 40}
+        spaceBetween={window.innerWidth < 560 ? 10 : 130}
         slidesPerView={window.innerWidth < 560 ? 2.4 : 3}
         freeMode={false}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="_mySwiperS py-2 sm:px-4"
+        className="_mySwiperS pt-[47px]"
       >
         <SwiperSlide className="_swiper-slide">
           <div>
