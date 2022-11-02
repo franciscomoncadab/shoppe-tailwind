@@ -23,22 +23,24 @@ function TextProducts() {
         {window.innerWidth < 873 ? (
           <div className="flex flex-row justify-between text-xl">
             <p>$ 25.00</p>
-            <a>
+            <Link to="#">
               <Share />
-            </a>
+            </Link>
           </div>
         ) : (
           "$ 20,00"
         )}
       </span>
       <div className="textProducts__rating">
-        <Rating />
-        <p className="text-dark-gray font-sm">1 customer review</p>
+        <Rating 
+          color="text-gray"
+        />
+        <p className="text-dark-gray font-normal text-[16px] ml-[24px]">1 customer review</p>
       </div>
       <p
         className={`${
           window.innerWidth < 873 ? "hidden" : "visible"
-        } sm:text-sm sm:p-1 sm:pr-10 sm:text-dark-gray`}
+        } sm:text-[16px] sm:font-normal sm:mt-[19px] sm:pr-10 sm:text-dark-gray`}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
         placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a
@@ -63,8 +65,8 @@ function TextProducts() {
             }}
           />
         </div>
-        <button className="mt-9 mb-6 border-2 py-2 rounded-md w-full sm:border-2 sm:px-20 sm:w-[73%] sm:rounded-md">
-          <Link to="*" className="text-base">
+        <button className="mt-6 mb-6 border-[1px] py-2 rounded-md w-full sm:border-[1px] sm:py-[14px] sm:px-20 sm:w-[73%] sm:rounded-md">
+          <Link to="*" className="text-[12px] font-normal sm:text-[16px] sm:font-bold">
             ADD TO CART
           </Link>
         </button>

@@ -1,6 +1,9 @@
 import React, { useState }from "react";
 
-const Rating = () => {
+interface Props {
+  color: string;
+}
+const Rating = (props: Props) => {
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
   return (
@@ -11,12 +14,12 @@ const Rating = () => {
           <button
                type="button"
                key={index}
-               className={`bg-transparent border-none outline-none cursor-pointer ${index <= (hover || rating) ? "text-black" : "text-dark-gray"}`}
+               className={`bg-transparent border-none outline-none cursor-pointer ${index <= (hover || rating) ? "text-black" : props.color }`}
                onClick={() => setRating(index)}
                onMouseEnter={() => setHover(index)}
                onMouseLeave={() => setHover(rating)}
           >
-            <span className="star text-2xl">&#9733;</span>
+            <span className="star text-2xl mr-[8px]">&#9733;</span>
           </button>
         );
       })}

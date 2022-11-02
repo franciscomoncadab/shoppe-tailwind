@@ -3,24 +3,25 @@
      px-3
      w-full
      h-full
-     sm:absolute
-     sm:left-[50%] 
-     sm:w-[50%] 
-     sm:px-14;
+     sm:flex
+     sm:flex-col
+     sm:w-[490px]
+     sm:px-0;
 
      &__product{
           @apply
           text-2xl
           font-medium
-          py-3
-          sm:font-medium;
+          sm:font-medium
+          sm:mb-[23px]
+          sm:text-[26px];
      }
 
      &__price{
           @apply
           text-gold
-          sm:text-lg
-          sm:py-5;
+          sm:text-[20px]
+          sm:font-medium;
      }
 
      &__rating{
@@ -28,22 +29,25 @@
           hidden
           sm:flex
           sm:flex-row
-          sm:items-center
-          sm:space-x-5;
+          sm:mt-[70.39px]
+          sm:items-center;
      }
 
      &__addCar{
           @apply
           w-full
           sm:flex
+          sm:flex-row
           sm:justify-start
+          sm:items-center
           sm:space-x-8
-          sm:py-10;
+          sm:mt-[48px];
 
           &-counter{
                @apply
                hidden
                sm:bg-light-gray
+               sm:h-[53px]
                sm:flex
                sm:flex-row
                sm:rounded-md;

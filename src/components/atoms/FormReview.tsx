@@ -1,5 +1,6 @@
 import React from "react";
 import Rating from "./Rating";
+import { ReactComponent as Ratings } from "../../assets/icons/rating.svg";
 
 function FormReview() {
   return (
@@ -8,7 +9,7 @@ function FormReview() {
       <p className="text-dark-gray mt-[11px] mb-[54px]">
         Your email address will not be published. Required fields are marked *
       </p>
-      <form className="flex flex-col gap-[18px] space-y-5 h-[540px]">
+      <form className="relative flex flex-col gap-[18px] space-y-5 h-[540px]">
         <input 
           placeholder="Your Review*"
           type={"text"}
@@ -33,8 +34,14 @@ function FormReview() {
         </div>
         <div>
           <p className="font-normal text-[14px] text-dark-gray mb-[13.39px]">Your Rating*</p>
-          <Rating 
+          <div>
+          <Ratings 
+            className="absolute mt-[6px]"
           />
+          <Rating 
+            color="text-white"
+          />
+          </div>
         </div>
         <button
           type="submit"
