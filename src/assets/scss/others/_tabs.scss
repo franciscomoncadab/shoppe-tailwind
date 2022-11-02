@@ -2,18 +2,18 @@
      @apply
      w-full
      mx-3
+     sm:mx-0
      sm:text-sm
      sm:font-medium
-     sm:text-center
      sm:text-dark-gray
      sm:border-b
      sm:border-gray
-     sm:p-12
+     sm:py-16
      sm:mt-16;
 
      &__list{
           @apply
-          py-2
+          py-1
           sm:flex
           sm:flex-wrap
           sm:text-xl
@@ -22,12 +22,13 @@
           &-links{
                @apply
                text-base
+               sm:focus:underline
+               sm:focus:underline-offset-[34px]
                sm:inline-block
-               sm:p-4
+               sm:mr-5
                sm:rounded-t-lg
-               sm:focus:border-b-2
                sm:focus:text-black
-               sm:focus:border-black
+               sm:focus:border-dark-gray;
           }
      }
 }

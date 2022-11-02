@@ -1,18 +1,14 @@
-.swiper {
+._swiper {
      width: 100%;
      height: 100%;
    }
 
-   .mySwiperS {
+   ._mySwiperS {
     width: 97%;
     height: 100%;
-
-    @media (min-width: 770px) {
-      display: none;
-    }
    }
    
-   .swiper-slide {
+   ._swiper-slide {
      text-align: center;
      font-size: 18px;
      background: #fff;
@@ -32,10 +28,15 @@
      align-items: center;
    }
 
-   .swiper-slide img {
+   ._swiper-slide img {
      display: block;
      width: 100%;
      height: 136px;
      object-fit: cover;
      border-radius: 8px;
+
+     @media (min-width: 1280px) {
+      height: 380px;
+      border-radius: 12px;
+     }
    }
