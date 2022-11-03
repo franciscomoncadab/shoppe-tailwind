@@ -2,16 +2,12 @@
      @apply
      pt-10
      sm:pt-0
-     sm:mt-52
-     sm:px-12;
+     sm:mt-[253px];
 
           hr {
                @apply
                border-gray
-               w-[96%] 
-               mx-3 
-               sm:w-[98%]
-               md:w-[99%];         
+               w-full;         
 
           }
 
@@ -22,7 +18,7 @@
                flex
                items-center
                sm:m-0
-               sx:w-[36.8%]
+               sx:w-[36%]
                sx:left-[64%] 
                sx:top-[28px]
                sx:z-10;
@@ -31,13 +27,6 @@
                &-input{
                     @apply
                     w-full
-                    sx:mr-3
-                    sm:mr-2
-                    md:mr-0
-                    ml:mr-2
-                    lg:mr-5
-                    xl:mr-7
-                    xxl:mr-11
                     md:text-lg
                     lg:text-xl                    
                     xxl:text-2xl

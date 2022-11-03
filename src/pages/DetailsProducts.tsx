@@ -5,9 +5,10 @@ import Tabs from "../components/organisms/Tabs";
 
 function DetailsProducts() {
   return (
-    <div className="mt-[10px] sm:mt-[128px]">
+    <div>
+      <hr  className="hidden sm:block sm:mb-[128px] text-gray" />
       <DetailsImage />
-      <div className="sm:mx-12">
+      <div>
         <Tabs />
       </div>
       <SimilarItems />

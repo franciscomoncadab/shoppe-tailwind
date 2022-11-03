@@ -13,7 +13,7 @@ import { Pagination, Autoplay } from "swiper";
 
 function Carousel() {
   return (
-    <div className="w-full sm:px-12">
+    <div className="w-full">
       <div>
         <Swiper
           loop={false}
@@ -63,7 +63,7 @@ function Carousel() {
             clickable: true,
           }}
           modules={[Pagination, Navigation, Autoplay]}
-          className="swiper p-3 -top-5 rounded-md"
+          className="swiper -top-5 mt-2 rounded-md"
         >
           <SwiperSlide className="z-10">
             <img src={window.innerWidth < 873 ? "./images/img1.png" : "./images/img01.png"} alt="imagen1" />

@@ -9,8 +9,8 @@ import "../../assets/scss/main.scss";
 function NavBarDesk() {
   return (
     <div className="wrapper">
-      <Link to={HOME} className="flex items-center ml-3">
-        <Logo className="mt-2 h-7 sm:h-9 md:w-40 lg:w-48 xl:w-80 content-start" />
+      <Link to={HOME} className="flex items-center">
+        <Logo className="content-start mb-4" />
       </Link>
 
       <ul className="wrapper__menu ">
@@ -46,7 +46,6 @@ function NavBarDesk() {
           </Link>
         </li>
       </ul>
-      <hr className="border-gray w-full hidden" />
     </div>
   );
 }
