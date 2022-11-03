@@ -1,9 +1,8 @@
 #app { height: 100% }
 html,
 body {
-  position: relative;
   height: 100%;
-  weight: 100%;
+  widht: 100%;
 }
 
 body {

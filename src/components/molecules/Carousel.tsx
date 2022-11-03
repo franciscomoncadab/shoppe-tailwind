@@ -63,7 +63,7 @@ function Carousel() {
             clickable: true,
           }}
           modules={[Pagination, Navigation, Autoplay]}
-          className="swiper -top-5 rounded-md"
+          className="swiper -top-5 mt-2 rounded-md"
         >
           <SwiperSlide className="z-10">
             <img src={window.innerWidth < 873 ? "./images/img1.png" : "./images/img01.png"} alt="imagen1" />
