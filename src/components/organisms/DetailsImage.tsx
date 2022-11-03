@@ -4,7 +4,7 @@ import TextProducts from "../molecules/TextProducts";
 
 function DetailsImage() {
   return (
-    <div className="sm:flex sm:flex-row sm:justify-center sm:gap-[64px] sm:m-auto sm:w-full sm:h-full sm:px-12">
+    <div className="sm:flex sm:flex-row sm:justify-center sm:gap-[64px] sm:m-auto sm:w-full sm:h-full">
       <div className="w-full px-3 sm:h-full sm:flex sm:flex-col-2 sm:gap-[39px] md:gap-[4.5%] ml:gap-[6%] sm:w-[699px] md:w-[58.78%] sm:px-0">
         <ul className="sm:flex sm:flex-col sm:gap-[39px] md:gap-[4.5%] hidden">
           <li>

@@ -7,7 +7,7 @@ function DetailsProducts() {
   return (
     <div className="mt-[10px] sm:mt-[128px]">
       <DetailsImage />
-      <div className="sm:mx-12">
+      <div>
         <Tabs />
       </div>
       <SimilarItems />

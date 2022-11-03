@@ -16,10 +16,10 @@ import similar3 from "../../assets/images/Img04.png";
 function SimilarItems() {
   return (
     <div className="py-1">
-      <h1 className="my-2 text-[16px] px-3 font-normal sm:px-12 sm:text-[26px] sm:my-7">Similar Items</h1>
+      <h1 className="my-2 text-[16px] px-3 font-normal sm:text-[26px] sm:my-7">Similar Items</h1>
       <Swiper
         loop={true}
-        spaceBetween={window.innerWidth < 560 ? 10 : 130}
+        spaceBetween={window.innerWidth < 560 ? 10 : 54}
         slidesPerView={window.innerWidth < 560 ? 2.4 : 3}
         freeMode={false}
         watchSlidesProgress={true}

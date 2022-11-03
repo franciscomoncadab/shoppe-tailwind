@@ -4,7 +4,7 @@ import Trigger from "../atoms/Trigger";
 
 function TabsM() {
   return (
-    <div className="px-3 w-full sm:px-12">
+    <div className="px-3 w-full">
       <Collapsible
         trigger={<Trigger text={"Description"} />}
         triggerClassName="text-base"
