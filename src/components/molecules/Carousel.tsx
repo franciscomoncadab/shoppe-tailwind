@@ -13,7 +13,7 @@ import { Pagination, Autoplay } from "swiper";
 
 function Carousel() {
   return (
-    <div className="w-full sm:px-12">
+    <div className="w-full">
       <div>
         <Swiper
           loop={false}

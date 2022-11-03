@@ -10,9 +10,9 @@ import product5 from "../../assets/images/Img05.png";
 
 function Products() {
   return (
-    <div className="w-full sm:px-11">
+    <div className="w-full">
       <div className="product">
-        <h2 className="text-xl ml-6 xs:text-2xl sm:py-4 lg:py-6 xl:py-7 md:text-3xl ml:text-4xl xl:text-5xl xxl:text-6xl xs:mb-3">Shop The Latest</h2>
+        <h2 className="text-xl font-medium ml-3 xs:text-2xl sm:py-4 lg:py-6 xl:py-7 sm:text-[33px] xs:mb-3">Shop The Latest</h2>
         <p className="product__view">
           View All
         </p>

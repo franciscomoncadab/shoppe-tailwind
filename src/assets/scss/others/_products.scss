@@ -9,19 +9,14 @@
           text-gold 
           my-4 
           mr-3 
-          text-xs 
-          xs:mr-6 
+          text-xs
           xs:text-lg
           sm:py-4
           lg:py-6
           xl:py-7
-          sm:text-xl
-          md:text-2xl
-          ml:text-3xl
-          lg:text-4xl
-          xl:text-5xl
+          sm:text-[20px]
+          sm:font-medium
           hover:text-black
-          hover:font-bold
           cursor-pointer;
      }
 
@@ -32,38 +27,32 @@
         sm:grid-cols-3
         mb-5
         gap-2
-        md:gap-14
-        lg:gap-20
-        xl:gap-24
         xs:mx-2;
 
         &-img{
           @apply
           w-full
-          object-cover;
+          object-cover
+          sm:h-[380px]
+          sm:w-[380px];
         }
 
         &-title{
           @apply
-          font-medium
+          font-normal
           py-2
           sm:py-4
           xs:text-xl
-          sm:text-2xl
-          md:text-3xl
-          lg:text-4xl
-          xl:text-5xl;
+          sm:text-[20px];
         }
 
         &-price{
           @apply
           text-gold
           my-1
+          font-medium
           xs:text-lg
-          sm:text-xl
-          md:text-2xl
-          lg:text-3xl
-          xl:text-4xl
+          sm:text-[20px];
         }
      }
 }
