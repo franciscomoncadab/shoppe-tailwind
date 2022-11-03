@@ -18,7 +18,7 @@ function Products() {
         </p>
       </div>
       <div className="product__grid">
-        <div className="p-2 sm:p-0 rounded-md">
+        <div className="p-2 sm:p-0  rounded-md">
           <img
             src={product1}
             className="product__grid-img"
@@ -29,7 +29,7 @@ function Products() {
             <p className="product__grid-price"> $ 20,00</p>
           </div>
         </div>
-        <div className="p-2 sm:p-0 rounded-md">
+        <div className="p-2 sm:p-0  rounded-md">
           <img
             src={product2}
             className="product__grid-img"
@@ -58,7 +58,7 @@ function Products() {
         </div>
         {window.innerWidth > 767 ? (
           <>
-            <div className="p-2 sm:p-0 rounded-md">
+            <div className="p-2 sm:p-0 sm:mr-0 rounded-md">
               <img
                 src={product4}
                 className="product__grid-img"
@@ -69,7 +69,7 @@ function Products() {
                 <p className="product__grid-price"> $ 30,00</p>
               </div>
             </div>
-            <div className="p-2 sm:p-0 rounded-md">
+            <div className="p-2 sm:p-0  rounded-md">
               <img
                 src={product31}
                 className="product__grid-img"
@@ -82,7 +82,7 @@ function Products() {
             </div>
           </>
         ) : null}
-        <div className="p-2 sm:p-0 rounded-md">
+        <div className="p-2 sm:p-0  rounded-md">
           <img
             src={product32}
             className="product__grid-img"
@@ -93,7 +93,7 @@ function Products() {
             <p className="product__grid-price">{window.innerWidth < 767 ? "$ 30.00" : "$ 19.00"}</p>
           </div>
         </div>
-        <div className="p-2 sm:p-0 rounded-md">
+        <div className="p-2 sm:p-0  rounded-md">
           <img
             src={product5}
             className="product__grid-img"
