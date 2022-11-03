@@ -34,7 +34,7 @@
    
    .swiper-slide img {
      display: block;
-     width: 100%;
+     width: 98%;
      height: 422px;
      object-fit: cover;
      border-radius: 8px;
@@ -46,23 +46,9 @@
      }
 
      @media (min-width: 1280px) {
+      width: 1248px;
       height: 646px;
       border-radius: 12px;
-     }
-
-     @media (min-width: 1820px) {
-      height: 700px;
-      border-radius: 14px;
-     }
-
-     @media (min-width: 2200px) {
-      height: 760px;
-      border-radius: 16px;
-     }
-
-     @media (min-width: 3070px) {
-      height: 845px;
-      border-radius: 18px;
      }
     
    }

@@ -21,18 +21,12 @@
         @apply
         grid
         grid-cols-2
-        sm:grid
         sm:grid-cols-3
         ml:justify-items-center
         mb-5
         gap-2
         sm:gap-y-[86px]
-        sm:gap-x-[57px]
-        ml:gap-x-[282px]
-        lg:gap-y-[160px]
-        lg:gap-x-[610px]
-        xxl:gap-x-[1280px]
-        xxl:gap-y-[300px];
+        sm:gap-x-[57px];
 
         &-img{
           @apply
