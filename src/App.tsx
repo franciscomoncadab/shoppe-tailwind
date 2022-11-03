@@ -4,7 +4,7 @@ import MainRouter from "./components/mainRouter/MainRouter";
 
 function App() {
   return (
-    <div className=" mx-auto sm:mx-0 sm:px-[96px]">
+    <div className="mx-auto sm:mx-0 sm:px-[96px]">
       <MainRouter />
     </div>
   );

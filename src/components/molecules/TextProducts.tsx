@@ -81,7 +81,7 @@ function TextProducts() {
         )}
       </div>
       <IconsProducts />
-      <div className="hidden sm:flex sm:flex-col sm:pt-8 sm:mt-[38px]">
+      <div className="hidden sm:flex sm:flex-col sm:mt-[38px]">
         <span className="flex">
           <p className="text-black text-lg">SKU:</p>
           <p className="text-dark-gray text-lg px-5"> 12</p>
