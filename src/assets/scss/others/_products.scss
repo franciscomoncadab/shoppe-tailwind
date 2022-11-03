@@ -1,19 +1,16 @@
 .product {
      @apply
      flex
-     flex-grow
+     flex-row
      justify-between;
 
      &__view {
           @apply
-          text-gold 
-          my-4 
-          mr-3 
-          text-xs
-          xs:text-lg
-          sm:py-4
-          lg:py-6
-          xl:py-7
+          text-gold
+          mt-[26px]
+          mb-[15px]
+          sm:mt-[73px]
+          sm:mb-[47px]
           sm:text-[20px]
           sm:font-medium
           hover:text-black
@@ -27,12 +24,13 @@
         sm:grid-cols-3
         mb-5
         gap-2
-        xs:mx-2;
+        sm:gap-[54px];
 
         &-img{
           @apply
           w-full
           object-cover
+          rounded-md
           sm:h-[380px]
           sm:w-[380px];
         }
@@ -40,9 +38,9 @@
         &-title{
           @apply
           font-normal
+          text-[14px]
           py-2
-          sm:py-4
-          xs:text-xl
+          sm:mt-[24px]
           sm:text-[20px];
         }
 
@@ -50,9 +48,10 @@
           @apply
           text-gold
           my-1
-          font-medium
-          xs:text-lg
-          sm:text-[20px];
+          font-normal
+          text-[12px]
+          sm:text-[20px]
+          sm:mt-[16px];
         }
      }
 }

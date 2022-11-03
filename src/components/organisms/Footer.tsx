@@ -12,7 +12,7 @@ function Footer() {
   return (
     <footer className="footer">
       {window.innerWidth > 753 ? <hr /> : null}
-      <div className="mx-3 bg-white sx:grid sx:grid-row-4">
+      <div className="bg-white sx:grid sx:grid-row-4">
         <div className="footer__give">
           <input
             className="footer__give-input"

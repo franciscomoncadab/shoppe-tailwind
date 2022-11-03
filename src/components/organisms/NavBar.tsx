@@ -33,7 +33,7 @@ function NavBar() {
       {window.innerWidth < 873 ? (
         <div className="flex flex-wrap justify-between mx-auto w-full max-w-[4400px] h-full ">
           <Link to={HOME} className="flex items-center ml-3">
-            <Logo className="mt-2 h-7 sm:h-9 md:w-40 lg:w-48 xl:w-80 content-start" />
+            <Logo className="my-2 content-start" />
           </Link>
           <a
             className="flex items-center"
