@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactComponent as Lense } from '../assets/icons/lens.svg';
+import { ReactComponent as Lense } from '../../assets/icons/lens.svg';
 
 function SearchBar() {
   return (

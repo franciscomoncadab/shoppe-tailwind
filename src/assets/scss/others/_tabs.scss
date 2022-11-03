@@ -1,0 +1,34 @@
+.tabs-container{
+     @apply
+     w-full
+     mx-3
+     sm:mx-0
+     sm:text-sm
+     sm:font-medium
+     sm:text-dark-gray
+     sm:border-b
+     sm:border-gray
+     sm:py-16
+     sm:mt-16;
+
+     &__list{
+          @apply
+          py-1
+          sm:flex
+          sm:flex-wrap
+          sm:text-xl
+          sm:-mb-12;
+
+          &-links{
+               @apply
+               text-base
+               sm:focus:underline
+               sm:focus:underline-offset-[34px]
+               sm:inline-block
+               sm:mr-5
+               sm:rounded-t-lg
+               sm:focus:text-black
+               sm:focus:border-dark-gray;
+          }
+     }
+}

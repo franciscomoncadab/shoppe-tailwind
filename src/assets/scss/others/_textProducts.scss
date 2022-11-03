@@ -1,0 +1,60 @@
+.textProducts {
+     @apply
+     px-3
+     w-full
+     h-full
+     sm:flex
+     sm:flex-col
+     ml:gap-3
+     sm:w-[490px]
+     md:w-[41.72%]
+     sm:px-0;
+
+     &__product{
+          @apply
+          text-2xl
+          font-medium
+          mt-[40px]
+          sm:mt-0
+          sm:font-medium
+          sm:mb-[23px]
+          sm:text-[26px];
+     }
+
+     &__price{
+          @apply
+          text-gold
+          sm:text-[20px]
+          sm:font-medium;
+     }
+
+     &__rating{
+          @apply
+          hidden
+          sm:flex
+          sm:flex-row
+          sm:mt-[70.39px]
+          sm:items-center;
+     }
+
+     &__addCar{
+          @apply
+          w-full
+          sm:flex
+          sm:flex-row
+          sm:justify-start
+          sm:items-center
+          sm:space-x-8
+          sm:mt-[48px];
+
+          &-counter{
+               @apply
+               hidden
+               sm:bg-light-gray
+               sm:h-[53px]
+               sm:flex
+               sm:flex-row
+               sm:rounded-md;
+          }
+     }
+}

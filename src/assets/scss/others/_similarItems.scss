@@ -1,0 +1,62 @@
+._swiper {
+     width: 100%;
+     height: 100%;
+   }
+
+   ._mySwiperS {
+    width: 100%;
+    height: 100%;
+   }
+   
+   ._swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+   
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+   }
+
+   ._swiper-slide img {
+     display: block;
+     width: 100%;
+     height: 136px;
+     object-fit: cover;
+     border-radius: 8px;
+
+     @media (min-width: 768px) {
+      height: 300px;
+      border-radius: 10px;
+     }
+
+     @media (min-width: 1280px) {
+      height: 380px;
+      border-radius: 12px;
+     }
+
+     @media (min-width: 1820px) {
+      height: 440px;
+      border-radius: 14px;
+     }
+
+     @media (min-width: 2200px) {
+      height: 520px;
+      border-radius: 16px;
+     }
+
+     @media (min-width: 3070px) {
+      height: 600px;
+      border-radius: 18px;
+     }
+   }

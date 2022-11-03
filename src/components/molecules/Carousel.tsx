@@ -6,7 +6,7 @@ import "swiper/scss/pagination";
 import "swiper/css/thumbs";
 import "swiper/css/free-mode";
 
-import "../assets/scss/main.scss";
+import "../../assets/scss/main.scss";
 import { FreeMode, Navigation, Thumbs } from "swiper";
 
 import { Pagination, Autoplay } from "swiper";
