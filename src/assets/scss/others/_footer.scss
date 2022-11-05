@@ -17,11 +17,17 @@
                relative
                flex
                items-center
+               mb-[42px]
+               sx:mb-0
+               sx:w-[300px]
+               sx:left-[71.5%]
+               sx:top-[80px]
+               sx:z-10
                sm:m-0
-               sx:w-[396px]
-               sx:left-[68.3%] 
-               sx:top-[39px]
-               sx:z-10;
+               sm:w-[396px]
+               sm:left-[68.3%] 
+               sm:top-[39px]
+               sm:z-10;
           
 
                &-input{
@@ -44,7 +50,7 @@
                     bottom-[40%]
                     sm:w-[26px]
                     sm:h-[12px]
-                    sx:right-[5%]
+                    sx:right-[1%]
                     sm:right-0
                     sm:mb-[9.16px]
                     sx:bottom-5                   
@@ -54,14 +60,14 @@
 
           &__info {
                @apply
-               mt-14
+               mt-[80px]
                sx:mt-0
                sm:mt-[5px];
 
                &-colum {
                   @apply
                   grid 
-                  gap-3 
+                  gap-[8px] 
                   sx:grid-flow-col 
                   sx:justify-start
                   sx:gap-0

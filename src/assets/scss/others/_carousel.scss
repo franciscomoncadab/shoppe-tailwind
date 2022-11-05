@@ -34,7 +34,7 @@
    
    .swiper-slide img {
      display: block;
-     width: 98%;
+     width: 100%;
      height: 422px;
      object-fit: cover;
      border-radius: 8px;
@@ -74,6 +74,10 @@
     bottom: 22px;
     left: 0;
     width: 100%;
+
+    @media (max-width: 768px) {
+      bottom: 9px;
+    }
   }
    
    .swiper-pagination-bullet {

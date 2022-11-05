@@ -3,7 +3,7 @@ import { ReactComponent as Lense } from '../../assets/icons/lens.svg';
 
 function SearchBar() {
   return (
-    <div className="sm:hidden">
+    <div className="sx:hidden">
       <form className="w-full">
         <div>
           <div  className="relative flex items-center text-black focus-withing:text-gray-300">
