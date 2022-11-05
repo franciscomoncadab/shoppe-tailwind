@@ -12,30 +12,30 @@ function Products() {
   return (
     <div className="w-full">
       <div className="product">
-        <h2 className="text-[16px] font-normal mt-[21px] mb-[13px] sm:mt-[64px] sm:mb-[39px] sm:text-[33px]">Shop The Latest</h2>
+        <h2 className="text-[16px] font-normal mt-[21px] mb-[13px] sm:mt-[58px] sm:mb-[39px] sm:text-[33px]">Shop The Latest</h2>
         <p className="product__view">
           View All
         </p>
       </div>
       <div className="product__grid">
-        <div className="p-2 sm:p-0  rounded-md">
+        <div className="p-2 sm:p-0 rounded-md">
           <img
             src={product1}
             className="product__grid-img"
             alt="product1"
           />
-          <div>
+          <div className="sm:mt-[18px] sm:space-y-[10px]">
             <p className="product__grid-title">Lira Earrings</p>
             <p className="product__grid-price"> $ 20,00</p>
           </div>
         </div>
-        <div className="p-2 sm:p-0  rounded-md">
+        <div className="p-2 sm:p-0 rounded-md">
           <img
             src={product2}
             className="product__grid-img"
             alt="product2"
           />
-          <div className="my-1">
+          <div className="my-1 sm:my-0 sm:mt-[18px] sm:space-y-[10px]">
             <p className="product__grid-title">{window.innerWidth < 767 ? "Ollie Earrings" : "Hal Earrings"}</p>
             <p className="product__grid-price">{window.innerWidth < 767 ? "$ 30,00" : "$ 25,00"}</p>
           </div>
@@ -64,7 +64,7 @@ function Products() {
                 className="product__grid-img"
                 alt="product4"
               />
-              <div>
+              <div className="sm:mt-[20px] sm:space-y-[16px]">
                 <p className="product__grid-title">Kaede Hair Pin Set Of 3</p>
                 <p className="product__grid-price"> $ 30,00</p>
               </div>
@@ -75,7 +75,7 @@ function Products() {
                 className="product__grid-img"
                 alt="product5"
               />
-              <div>
+              <div className="sm:mt-[24px] sm:space-y-[10px]">
                 <p className="product__grid-title">Hair Pin Set of 3</p>
                 <p className="product__grid-price"> $ 30,00</p>
               </div>
@@ -88,7 +88,7 @@ function Products() {
             className="product__grid-img"
             alt="product4"
           />
-          <div>
+          <div className="sm:mt-[24px] sm:space-y-[10px]">
             <p className="product__grid-title">{window.innerWidth < 767 ? "Kaede Hair Pin" : "Plaine Necklace"}</p>
             <p className="product__grid-price">{window.innerWidth < 767 ? "$ 30.00" : "$ 19.00"}</p>
           </div>
@@ -99,8 +99,8 @@ function Products() {
             className="product__grid-img"
             alt="product5"
           />
-          <div>
-            <p className="product__grid-title">{window.innerWidth < 767 ? "Yuki Hair Pin" : "Yuki Hair Pin Set Of 3"}</p>
+          <div className="sm:mt-[24px] sm:space-y-[10px]">
+            <p className="product__grid-title">{window.innerWidth < 767 ? "Yuki Hair Pin" : "Yuki Hair Pin Set of 3"}</p>
             <p className="product__grid-price"> $ 29,00</p>
           </div>
         </div>

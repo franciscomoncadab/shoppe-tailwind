@@ -9,7 +9,7 @@
           text-gold
           mt-[26px]
           mb-[15px]
-          sm:mt-[73px]
+          sm:mt-[68px]
           sm:mb-[47px]
           sm:text-[20px]
           sm:font-medium
@@ -22,10 +22,11 @@
         grid
         grid-cols-2
         sm:grid-cols-3
-        ml:justify-items-center
         mb-5
         gap-2
-        sm:gap-y-[86px]
+        sm:mb-0
+        sm:gap-0
+        sm:gap-y-[78px]
         sm:gap-x-[57px];
 
         &-img{
@@ -42,7 +43,7 @@
           font-normal
           text-[14px]
           py-2
-          sm:mt-[24px]
+          sm:py-0
           sm:text-[20px];
         }
 
@@ -52,8 +53,8 @@
           my-1
           font-normal
           text-[12px]
-          sm:text-[20px]
-          sm:mt-[16px];
+          sm:my-0
+          sm:text-[20px];
         }
      }
 }
