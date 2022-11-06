@@ -11,17 +11,17 @@ function Tags() {
         <div className="">
           <div className="tabs-container">
             <ul className="tabs-container__list">
-              <li className="my-2">
+              <li className="my-[10px]">
                 <Link to={DETAILS} className="tabs-container__list-links">
                   Description
                 </Link>
               </li>
-              <li className=" my-2">
+              <li className=" my-[10px]">
                 <Link to={ADITIONALINFO} className="tabs-container__list-links">
                   Aditional Information
                 </Link>
               </li>
-              <li className=" my-2">
+              <li className=" my-[10px]">
                 <Link to={REVIEWS} className="tabs-container__list-links">
                   Reviews(0)
                 </Link>

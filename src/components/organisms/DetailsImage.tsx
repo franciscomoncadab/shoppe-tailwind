@@ -4,9 +4,9 @@ import TextProducts from "../molecules/TextProducts";
 
 function DetailsImage() {
   return (
-    <div className="sm:flex sm:flex-row sm:justify-center sm:gap-[64px] sm:m-auto sm:w-full sm:h-full">
+    <div className="sm:flex sm:flex-row sm:justify-center sm:gap-x-[50px] sm:m-auto sm:w-full sm:h-full">
       <div className="w-full px-3 sm:h-full sm:flex sm:flex-col-2 sm:gap-[39px] sm:w-[699px] md:w-[58.78%] sm:px-0">
-        <ul className="sm:flex sm:flex-col sm:gap-[39px] hidden">
+        <ul className="sm:flex sm:flex-col sm:gap-[40px] hidden">
           <li>
             <img
               className="w-[120px] h-[120px] rounded-md"

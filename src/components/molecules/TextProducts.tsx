@@ -35,12 +35,12 @@ function TextProducts() {
         <Rating 
           color="text-gray"
         />
-        <p className="text-dark-gray font-normal text-[16px] ml-[24px]">1 customer review</p>
+        <p className="text-dark-gray font-normal text-[16px] ml-[15px]">1 customer review</p>
       </div>
       <p
         className={`${
           window.innerWidth < 767 ? "hidden" : "visible"
-        } sm:text-[16px] sm:font-normal sm:mt-[19px] sm:text-dark-gray`}
+        } sm:text-[16px] sm:font-normal sm:ml-[14px] sm:mt-[19px] sm:text-dark-gray`}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
         placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a
@@ -50,14 +50,14 @@ function TextProducts() {
       <div className="textProducts__addCar">
         <div className="textProducts__addCar-counter">
           <input
-            className="items-center text-black text-base w-7 cursor-pointer hover:bg-gray rounded-md"
+            className="items-center text-black font-normal text-[16px] w-[28.5px] cursor-pointer hover:bg-gray rounded-md"
             type="button"
             value="-"
             onClick={handlerCounter}
           />
-          <p className="justify-center item-center text-black text-base p-4">{counter}</p>
+          <p className="justify-center item-center text-black text-base p-[19px]">{counter}</p>
           <input
-            className="items-center text-black text-base w-7 cursor-pointer hover:bg-gray rounded-md"
+            className="items-center text-black font-normal text-[16px] w-[28.5px] cursor-pointer hover:bg-gray rounded-md"
             type="button"
             value="+"
             onClick={() => {
@@ -81,14 +81,14 @@ function TextProducts() {
         )}
       </div>
       <IconsProducts />
-      <div className="hidden sm:flex sm:flex-col sm:mt-[38px]">
+      <div className="hidden sm:flex sm:flex-col sm:mt-[38px] sm:ml-[14px]">
         <span className="flex">
-          <p className="text-black text-lg">SKU:</p>
-          <p className="text-dark-gray text-lg px-5"> 12</p>
+          <p className="text-black text-[16px] font-normal">SKU:</p>
+          <p className="text-dark-gray text-[16px] font-normal mx-[16px]"> 12</p>
         </span>
-        <span className="flex">
-          <p className="text-black text-lg">Categories:</p>
-          <p className="text-dark-gray text-lg px-5"> Fashion, Style</p>
+        <span className="flex mt-[8px]">
+          <p className="text-black text-[16px] font-normal">Categories:</p>
+          <p className="text-dark-gray text-[16px] font-normal mx-[16px]"> Fashion, Style</p>
         </span>
       </div>
       <hr className="my-3 text-gray sm:hidden" />

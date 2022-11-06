@@ -15,8 +15,8 @@ import similar3 from "../../assets/images/Img04.png";
 
 function SimilarItems() {
   return (
-    <div className="py-1">
-      <h1 className="my-2 text-[16px] px-3 font-normal sm:px-0 sm:text-[26px] sm:my-7">Similar Items</h1>
+    <div>
+      <h1 className="my-2 text-[16px] px-3 font-normal sm:px-0 sm:text-[26px] sm:mt-[96px]">Similar Items</h1>
       <Swiper
         loop={true}
         spaceBetween={(window.innerWidth < 560 ? 10 : 54) }
@@ -24,27 +24,27 @@ function SimilarItems() {
         freeMode={false}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="_mySwiperS pt-[47px]"
+        className="_mySwiperS mt-[44px]"
       >
         <SwiperSlide className="_swiper-slide">
           <div>
             <img src={similar1} alt="img1"  />
-            <p className="py-2 text-left">Plaine Necklace</p>
-            <p className="text-gold text-left"> $ 30.00</p>
+            <p className="mt-[24px] text-left text-[20px] font-normal">Plaine Necklace</p>
+            <p className="text-gold text-left text-[20px] font-medium mt-[10px]"> $ 30,00</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className="_swiper-slide">
           <div className="">
             <img src={similar2} alt="img2"  />
-            <p className="py-2 text-left">Ollie Earrings</p>
-            <p className="text-gold text-left"> $ 30.00</p>
+            <p className="mt-[24px] text-left text-[20px] font-normal">Ollie Earrings</p>
+            <p className="text-gold text-left text-[20px] font-medium mt-[10px]"> $ 30,00</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className="_swiper-slide">
           <div className="">
             <img src={similar3} alt="img3"  />
-            <p className="py-2 text-left">Kaede Hair Pin</p>
-            <p className="text-gold text-left"> $ 30.00</p>
+            <p className="mt-[24px] text-left text-[20px] font-normal">Kaede Hair Pin</p>
+            <p className="text-gold text-left text-[20px] font-medium mt-[10px]"> $ 30,00</p>
           </div>
         </SwiperSlide>
       </Swiper>

@@ -15,7 +15,8 @@
           font-medium
           mt-[40px]
           sm:mt-0
-          sm:font-medium
+          sm:ml-[14px]
+          sm:font-normal
           sm:mb-[23px]
           sm:text-[26px];
      }
@@ -23,8 +24,9 @@
      &__price{
           @apply
           text-gold
-          sm:text-[20px]
-          sm:font-medium;
+          sm:ml-[14px]
+          sm:font-medium
+          sm:text-[20px];
      }
 
      &__rating{
@@ -32,7 +34,8 @@
           hidden
           sm:flex
           sm:flex-row
-          sm:mt-[70.39px]
+          sm:ml-[14px]
+          sm:mt-[60px]
           sm:items-center;
      }
 
@@ -43,8 +46,9 @@
           sm:flex-row
           sm:justify-start
           sm:items-center
-          sm:space-x-8
-          sm:mt-[48px];
+          sm:space-x-[22px]
+          sm:ml-[14px]
+          sm:mt-[29px];
 
           &-counter{
                @apply
