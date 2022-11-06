@@ -29,37 +29,37 @@ function NavBar() {
   }
 
   return (
-    <nav className="w-full h-full sm:pt-10">
+    <nav className="w-full h-full">
       {window.innerWidth < 873 ? (
         <div className="flex flex-wrap justify-between mx-auto w-full max-w-[4400px] h-full ">
-          <Link to={HOME} className="flex items-center ml-3">
-            <Logo className="my-2 content-start" />
+          <Link to={HOME} className="flex items-center">
+            <Logo className="content-start" />
           </Link>
-          <a
+          <Link
             className="flex items-center"
             onClick={() => {
               setMobileMenu(!mobileMenu);
             }}
-            href="#"
+            to="#"
           >
-            <Car className="mt-2 mr-3 md:h-8 md:w-8 lg:h-10 lg:w-10" />
+            <Car className="mt-2 mr-[13px]" />
 
             {!mobileMenu ? (
               <Menu
-                className="mt-2 mr-3 md:h-8 md:w-8 lg:h-10 lg:w-10"
+                className="mt-2"
                 onClick={() => {
                   disableScroll();
                 }}
               />
             ) : (
               <Close
-                className="mt-2 mr-3 md:h-8 md:w-8 lg:h-10 lg:w-10"
+                className="mt-2"
                 onClick={() => {
                   enableScroll();
                 }}
               />
             )}
-          </a>
+          </Link>
 
           <ul
             className={`absolute z-30 bg-white top-24 xs:top-20 ${

@@ -8,12 +8,12 @@ import Line from "../../assets/images/LineIcon.png";
 
 function IconsProducts() {
      return ( 
-          <div className="hidden sm:flex sm:justify-start sm:space-x-9 sm:pt-9 ">
+          <div className="hidden sm:flex sm:justify-start sm:mt-[58px] sm:ml-[14px]">
                <Heart className="cursor-pointer" />
-               <img src={Line} alt="line"/>
-               <Mail className="cursor-pointer" />
-               <Facebook className="cursor-pointer" />
-               <Instagram className="cursor-pointer" />
+               <img src={Line} alt="line" className="sm:ml-[39.86px] sm:mr-[39px]" />
+               <Mail className="cursor-pointer sm:mr-[24px]" />
+               <Facebook className="cursor-pointer sm:mr-[24px]" />
+               <Instagram className="cursor-pointer sm:mr-[24px]" />
                <Twitter className="cursor-pointer" />
           </div>
       );

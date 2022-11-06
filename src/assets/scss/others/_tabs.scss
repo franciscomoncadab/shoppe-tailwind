@@ -1,30 +1,29 @@
 .tabs-container{
      @apply
      w-full
-     sm:text-sm
-     sm:font-medium
      sm:text-dark-gray
      sm:border-b
      sm:border-gray
-     sm:py-16
-     sm:mt-16;
+     sm:mt-[115px];
 
      &__list{
           @apply
           py-1
+          sm:py-0
           sm:flex
           sm:flex-wrap
-          sm:text-xl
-          sm:-mb-12;
+          sm:space-x-[96px];
 
           &-links{
                @apply
                text-base
+               sm:text-[20px]
+               sm:font-normal
                sm:focus:underline
                sm:focus:underline-offset-[34px]
                sm:inline-block
-               sm:mr-5
                sm:rounded-t-lg
+               sm:mb-[20px]
                sm:focus:text-black
                sm:focus:border-dark-gray;
           }

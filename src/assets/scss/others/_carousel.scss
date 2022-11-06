@@ -34,7 +34,7 @@
    
    .swiper-slide img {
      display: block;
-     width: 98%;
+     width: 100%;
      height: 422px;
      object-fit: cover;
      border-radius: 8px;
@@ -52,5 +52,103 @@
      }
     
    }
+   .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    &.swiper-pagination-hidden {
+      opacity: 0;
+    }
+    .swiper-pagination-disabled > &,
+    &.swiper-pagination-disabled {
+      display: none !important;
+    }
+  }
+  /* Common Styles */
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 22px;
+    left: 0;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      bottom: 9px;
+    }
+  }
+   
+   .swiper-pagination-bullet {
+    width: 9.18px;
+    height: 9.18px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #FFF;
+    opacity: 1;
+    @at-root button#{&} {
+      border: none;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      appearance: none;
+    }
+    .swiper-pagination-clickable & {
+      cursor: pointer;
+    }
+  
+    &:only-child {
+      display: none !important;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: transparent;
+    border: 1px solid #FFF;
+    height: 18px;
+    width: 18px;
+  }
+
+  .swiper-vertical > .swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets {
+  right: 10px;
+  top: 50%;
+  transform: translate3d(0px, -50%, 0);
+  .swiper-pagination-bullet {
+    margin: var(--swiper-pagination-bullet-vertical-gap, 10px) 0;
+    display: block;
+  }
+  &.swiper-pagination-bullets-dynamic {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    .swiper-pagination-bullet {
+      display: inline-block;
+      transition: 200ms transform, 200ms top;
+    }
+  }
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-horizontal.swiper-pagination-bullets {
+  .swiper-pagination-bullet {
+    margin-left: 7.8px;
+    margin-right: 5.8px;
+    margin-top: 2px;
+  }
+  &.swiper-pagination-bullets-dynamic {
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    .swiper-pagination-bullet {
+      transition: 200ms transform, 200ms left;
+    }
+  }
+}
+.swiper-horizontal.swiper-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 200ms transform, 200ms right;
+}
+
+  
    
    

@@ -2,7 +2,7 @@
      @apply
      pt-10
      sm:pt-0
-     sm:mt-[253px];
+     sm:mt-[250px];
 
           hr {
                @apply
@@ -17,20 +17,26 @@
                relative
                flex
                items-center
+               mb-[42px]
+               sx:mb-0
+               sx:w-[300px]
+               sx:left-[71.5%]
+               sx:top-[80px]
+               sx:z-10
                sm:m-0
-               sx:w-[36%]
-               sx:left-[64%] 
-               sx:top-[28px]
-               sx:z-10;
+               sm:w-[396px]
+               sm:left-[68.3%] 
+               sm:top-[39px]
+               sm:z-10;
           
 
                &-input{
                     @apply
                     w-full
-                    md:text-lg
-                    lg:text-xl                    
-                    xxl:text-2xl
-                    border-b-2 
+                    sm:text-[16px]
+                    sm:font-normal
+                    border-b-[1px]
+                    sm:pb-[13px]
                     mb-3 
                     pb-1;
                }
@@ -41,31 +47,31 @@
                     w-5 
                     h-5
                     right-[1%]                   
-                    bottom-[40%] 
-                    sx:right-[5%]
-                    sm:right-[2%]
-                    ml:right-[1.7%]
-                    md:right-[0.5%]
-                    lg:right-[2.5%]
-                    xl:right-[2.8%]
-                    sx:bottom-5
-                    xxl:right-[3.5%]                    
+                    bottom-[40%]
+                    sm:w-[26px]
+                    sm:h-[12px]
+                    sx:right-[1%]
+                    sm:right-0
+                    sm:mb-[9.16px]
+                    sx:bottom-5                   
                     pointer-events-none;
                }
           }
 
           &__info {
                @apply
-               mt-14
-               sx:mt-0;
+               mt-[80px]
+               sx:mt-0
+               sm:mt-[5px];
 
                &-colum {
                   @apply
                   grid 
-                  gap-3 
+                  gap-[8px] 
                   sx:grid-flow-col 
-                  sx:justify-start 
-                  sx:space-x-4;
+                  sx:justify-start
+                  sx:gap-0
+                  sx:space-x-[41px];
                }
           }
 
@@ -75,6 +81,7 @@
                sx:items-center
                sx:justify-between
                sx:flex-row-reverse
-               sx:py-2;
+               sx:py-2
+               sm:py-0;
           }
 }
