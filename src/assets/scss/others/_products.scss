@@ -52,6 +52,8 @@
           font-normal
           text-[14px]
           py-2
+          sm:cursor-pointer
+          sm:hover:underline
           sm:py-0
           sm:text-[20px];
         }
@@ -62,6 +64,8 @@
           my-1
           font-normal
           text-[12px]
+          sm:cursor-pointer
+          sm:hover:underline
           sm:my-0
           sm:text-[20px];
         }

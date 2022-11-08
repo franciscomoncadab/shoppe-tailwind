@@ -30,7 +30,7 @@ function Products() {
           <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
             <Car />
             <Eye />
-            <Heart />
+            <Heart className="fill-black" />
           </span>
           <div className="sm:mt-[18px] sm:space-y-[10px]">
             <p className="product__grid-title">Lira Earrings</p>
@@ -46,7 +46,7 @@ function Products() {
           <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
             <Car />
             <Eye />
-            <Heart />
+            <Heart className="fill-black" />
           </span>
           <div className="my-1 sm:my-0 sm:mt-[18px] sm:space-y-[10px]">
             <p className="product__grid-title">{window.innerWidth < 767 ? "Ollie Earrings" : "Hal Earrings"}</p>
@@ -80,7 +80,7 @@ function Products() {
               <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
             <Car />
             <Eye />
-            <Heart />
+            <Heart className="fill-black" />
           </span>
               <div className="sm:mt-[20px] sm:space-y-[16px]">
                 <p className="product__grid-title">Kaede Hair Pin Set Of 3</p>
@@ -96,7 +96,7 @@ function Products() {
               <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
             <Car />
             <Eye />
-            <Heart />
+            <Heart className="fill-black" />
           </span>
               <div className="sm:mt-[24px] sm:space-y-[10px]">
                 <p className="product__grid-title">Hair Pin Set of 3</p>
@@ -114,7 +114,7 @@ function Products() {
           <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
             <Car />
             <Eye />
-            <Heart />
+            <Heart className="fill-black" />
           </span>
           <div className="sm:mt-[24px] sm:space-y-[10px]">
             <p className="product__grid-title">{window.innerWidth < 767 ? "Kaede Hair Pin" : "Plaine Necklace"}</p>
@@ -130,7 +130,7 @@ function Products() {
           <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
             <Car />
             <Eye />
-            <Heart />
+            <Heart className="fill-black" />
           </span>
           <div className="sm:mt-[24px] sm:space-y-[10px]">
             <p className="product__grid-title">{window.innerWidth < 767 ? "Yuki Hair Pin" : "Yuki Hair Pin Set of 3"}</p>
