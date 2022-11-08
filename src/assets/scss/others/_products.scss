@@ -52,11 +52,13 @@
           font-normal
           text-[14px]
           py-2
+          sm:mt-[18px]
           sm:cursor-pointer
           sm:hover:underline
           sm:py-0
           sm:text-[20px];
         }
+
 
         &-price{
           @apply

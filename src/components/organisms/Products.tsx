@@ -10,6 +10,7 @@ import product31 from "../../assets/images/Img031.png";
 import product32 from "../../assets/images/Img032.png";
 import product4 from "../../assets/images/Img04.png";
 import product5 from "../../assets/images/Img05.png";
+import { Link } from "react-router-dom";
 
 function Products() {
   return (
@@ -32,10 +33,10 @@ function Products() {
             <Eye />
             <Heart className="fill-black" />
           </span>
-          <div className="sm:mt-[18px] sm:space-y-[10px]">
+          <Link to="*" className="sm:space-y-[10px]">
             <p className="product__grid-title">Lira Earrings</p>
             <p className="product__grid-price"> $ 20,00</p>
-          </div>
+          </Link>
         </div>
         <div className="relative sm:p-0 rounded-md">
           <img
