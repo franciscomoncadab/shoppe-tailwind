@@ -65,7 +65,7 @@ function TextProducts() {
             }}
           />
         </div>
-        <button className="mt-6 mb-6 border-[1px] py-2 rounded-md w-full sm:border-[1px] sm:py-[14px] sm:px-20 sm:w-[73%] sm:rounded-md">
+        <button className="mt-6 mb-6 border-[1px] py-2 rounded-md w-full hover:bg-black hover:text-white sm:border-[1px] sm:py-[14px] sm:px-20 sm:w-[73%] sm:rounded-md">
           <Link to="*" className="text-[12px] font-normal sm:text-[16px] sm:font-bold">
             ADD TO CART
           </Link>

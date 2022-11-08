@@ -10,15 +10,16 @@ import product31 from "../../assets/images/Img031.png";
 import product32 from "../../assets/images/Img032.png";
 import product4 from "../../assets/images/Img04.png";
 import product5 from "../../assets/images/Img05.png";
+import { Link } from "react-router-dom";
 
 function Products() {
   return (
     <div className="w-full">
       <div className="product">
         <h2 className="text-[16px] font-normal mt-[21px] mb-[13px] sm:mt-[58px] sm:mb-[39px] sm:text-[33px]">Shop The Latest</h2>
-        <p className="product__view">
+        <Link to="*" className="product__view">
           View All
-        </p>
+        </Link>
       </div>
       <div className="product__grid">
         <div className="relative z-0 sm:p-0 rounded-md">
@@ -32,10 +33,10 @@ function Products() {
             <Eye />
             <Heart className="fill-black" />
           </span>
-          <div className="sm:mt-[18px] sm:space-y-[10px]">
+          <Link to="*" className="sm:space-y-[10px]">
             <p className="product__grid-title">Lira Earrings</p>
             <p className="product__grid-price"> $ 20,00</p>
-          </div>
+          </Link>
         </div>
         <div className="relative sm:p-0 rounded-md">
           <img
