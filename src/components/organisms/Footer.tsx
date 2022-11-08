@@ -71,26 +71,24 @@ function Footer() {
               {"   "}
               <span className="px-2 sx:hidden">_____</span>
             </span>
-            <a href="." className="hidden sm:block text-dark-gray hover:text-black">
-              <Linkedin />
+            <a href=".">
+              <Linkedin className="hidden sm:block fill-dark-gray hover:fill-black" />
             </a>
             <a
               href="."
-              className="text-dark-gray hover:text-black"
             >
-              <Facebook />
+              <Facebook className="fill-dark-gray hover:fill-black" />
             </a>
             <a
               href="."
-              className="text-dark-gray hover:text-black"
             >
-             <Instagram /> 
+             <Instagram className="fill-dark-gray hover:fill-black" /> 
             </a>
             <a
               href="."
-              className="text-dark-gray hover:text-black"
+              
             >
-             <Twitter /> 
+             <Twitter className="fill-dark-gray hover:fill-black" /> 
             </a>
           </div>
           <span className="text-sm text-dark-gray sm:mt-[47px] sm:space-x-[3px] sm:font-normal sm:text-[16px] sm:mb-0 mb-4 sx:flex-start">

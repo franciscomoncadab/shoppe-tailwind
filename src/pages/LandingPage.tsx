@@ -5,11 +5,11 @@ import Products   from '../components/organisms/Products'
 
 function LandingPage() {
   return (
-    <>
+    <div>
       <SearchBar />
       <Carousel />
       <Products />
-    </>
+    </div>
   )
 }
 
