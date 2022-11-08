@@ -6,7 +6,7 @@ import { HOME } from "../routes/routes";
 function NotFoundPage() {
   return (
     <div>
-      <hr  className="hidden sm:block sm:mt-[18px] text-gray" />
+      <hr  className="hidden sm:block sm:mt-[12px] text-gray" />
       <SearchBar />
       <div 
       className="relative flex flex-col justify-center items-center">

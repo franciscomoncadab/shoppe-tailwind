@@ -34,8 +34,17 @@
           w-full
           object-cover
           rounded-md
+          sm:hover:opacity-30
+          sm:cursor-pointer
           sm:h-[380px]
           sm:w-[380px];
+        }
+
+        &-img:hover ~ span{
+          display: flex;
+          flex-direction: row;
+          gap: 30px;
+          pointer-events: none;
         }
 
         &-title{

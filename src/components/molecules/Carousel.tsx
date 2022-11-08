@@ -73,9 +73,12 @@ function Carousel() {
             <p className="absolute z-10 text-white font-normal text-[12px] bottom-[140px] right-[84.4%] sm:text-[26px] sm:bottom-[326px] sm:right-[1115px]">
               $ 68,00
             </p>
-            <button className="absolute z-10 rounded-[4px] border-[1px] text-white hover:text-black hover:bg-white hover:border-white text-center bottom-[80px] right-[64.8%] sm:py-[9.5px] sm:px-[32px] sm:right-[1015px] sm:bottom-[228px] py-[6px] px-[19px]">
-            <Link to="*" className="text-center text-[12px] font-normal sm:font-bold sm:text-[20px]">
-              View Product
+            <button className="absolute z-10 rounded-[4px] border-[1px] text-white hover:bg-opacity-50 hover:bg-white hover:border-white text-center bottom-[80px] right-[64.8%] sm:py-[9.5px] sm:px-[32px] sm:right-[1015px] sm:bottom-[228px] py-[6px] px-[19px]">
+              <Link
+                to="*"
+                className="text-center text-[12px] font-normal sm:font-bold sm:text-[20px]"
+              >
+                View Product
               </Link>
             </button>
           </SwiperSlide>
@@ -88,9 +91,12 @@ function Carousel() {
             <p className="absolute z-10 text-white font-normal text-[12px] bottom-[140px] right-[84.4%] sm:text-[26px] sm:bottom-[326px] sm:right-[1115px]">
               $ 80,00
             </p>
-            <button className="absolute z-10 rounded-[4px] border-[1px] text-white hover:text-black hover:bg-white hover:border-white text-center bottom-[80px] right-[64.8%] sm:py-[9.5px] sm:px-[32px] sm:right-[1015px] sm:bottom-[228px] py-[6px] px-[19px]">
-            <Link to="*" className="text-center text-[12px] font-normal sm:font-bold sm:text-[20px]">
-              View Product
+            <button className="absolute z-10 rounded-[4px] border-[1px] text-white hover:bg-opacity-50 hover:bg-white hover:border-white text-center bottom-[80px] right-[64.8%] sm:py-[9.5px] sm:px-[32px] sm:right-[1015px] sm:bottom-[228px] py-[6px] px-[19px]">
+              <Link
+                to="*"
+                className="text-center text-[12px] font-normal sm:font-bold sm:text-[20px]"
+              >
+                View Product
               </Link>
             </button>
           </SwiperSlide>
@@ -103,9 +109,12 @@ function Carousel() {
             <p className="absolute z-10 text-white font-normal text-[12px] bottom-[140px] right-[82.4%] sm:text-[26px] sm:bottom-[326px] sm:right-[1099px]">
               $ 250,00
             </p>
-            <button className="absolute z-10 rounded-[4px] border-[1px] text-white hover:text-black hover:bg-white hover:border-white text-center bottom-[80px] right-[64.8%] sm:py-[9.5px] sm:px-[32px] sm:right-[1015px] sm:bottom-[228px] py-[6px] px-[19px]">
-            <Link to="*" className="text-center text-[12px] font-normal sm:font-bold sm:text-[20px]">
-              View Product
+            <button className="absolute z-10 rounded-[4px] border-[1px] text-white hover:bg-opacity-50 hover:bg-white hover:border-white text-center bottom-[80px] right-[64.8%] sm:py-[9.5px] sm:px-[32px] sm:right-[1015px] sm:bottom-[228px] py-[6px] px-[19px]">
+              <Link
+                to="*"
+                className="text-center text-[12px] font-normal sm:font-bold sm:text-[20px]"
+              >
+                View Product
               </Link>
             </button>
           </SwiperSlide>
@@ -118,9 +127,12 @@ function Carousel() {
             <p className="absolute z-10 text-white font-normal text-[12px] bottom-[140px] right-[84.4%] sm:text-[26px] sm:bottom-[326px] sm:right-[1115px]">
               $ 68,00
             </p>
-            <button className="absolute z-10 rounded-[4px] border-[1px] text-white hover:text-black hover:bg-white hover:border-white text-center bottom-[80px] right-[64.8%] sm:py-[9.5px] sm:px-[32px] sm:right-[1015px] sm:bottom-[228px] py-[6px] px-[19px]">
-            <Link to="*" className="text-center text-[12px] font-normal sm:font-bold sm:text-[20px]">
-              View Product
+            <button className="absolute z-10 rounded-[4px] border-[1px] text-white hover:bg-opacity-50 hover:bg-white hover:border-white text-center bottom-[80px] right-[64.8%] sm:py-[9.5px] sm:px-[32px] sm:right-[1015px] sm:bottom-[228px] py-[6px] px-[19px]">
+              <Link
+                to="*"
+                className="text-center text-[12px] font-normal sm:font-bold sm:text-[20px]"
+              >
+                View Product
               </Link>
             </button>
           </SwiperSlide>
@@ -133,9 +145,12 @@ function Carousel() {
             <p className="absolute z-10 text-white font-normal text-[12px] bottom-[140px] right-[84.4%] sm:text-[26px] sm:bottom-[326px] sm:right-[1115px]">
               $ 88,00
             </p>
-            <button className="absolute z-10 rounded-[4px] border-[1px] text-white hover:text-black hover:bg-white hover:border-white text-center bottom-[80px] right-[64.8%] sm:py-[9.5px] sm:px-[32px] sm:right-[1015px] sm:bottom-[228px] py-[6px] px-[19px]">
-              <Link to="*" className="text-[12px] font-normal sm:font-bold sm:text-[20px]">
-              View Product
+            <button className="absolute z-10 rounded-[4px] border-[1px] text-white hover:bg-opacity-50 hover:bg-white hover:border-white text-center bottom-[80px] right-[64.8%] sm:py-[9.5px] sm:px-[32px] sm:right-[1015px] sm:bottom-[228px] py-[6px] px-[19px]">
+              <Link
+                to="*"
+                className="text-[12px] font-normal sm:font-bold sm:text-[20px]"
+              >
+                View Product
               </Link>
             </button>
           </SwiperSlide>
