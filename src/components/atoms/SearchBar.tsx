@@ -7,7 +7,7 @@ function SearchBar() {
       <form className="w-full">
         <div>
           <div  className="relative flex items-center text-black focus-withing:text-gray-300">
-            <Lense className="absolute inset-y-0 my-[16px] w-[12px] h-[12px] ml-[10px] mr-[8px] bg-gray pointer-events-none" /> 
+            <Lense className="absolute inset-y-0 my-[18px] w-[12px] h-[12px] ml-[10px] bg-gray pointer-events-none" /> 
             <input
             type="search"
             id="search"

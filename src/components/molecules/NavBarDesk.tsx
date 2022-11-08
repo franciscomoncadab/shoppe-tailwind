@@ -10,9 +10,9 @@ function NavBarDesk() {
   return (
     <div className="wrapper">
       <Link to={HOME} className="flex items-center">
-        <Logo className="content-start mt-[10px]" />
+        <Logo className="content-start mb-[16px] mt-[10px]" />
       </Link>
-      <div className="flex flex-row mt-[15px]">
+      <div className="flex flex-row mb-[12px] mt-[15px]">
         <ul className="wrapper__menu ">
           <li className="wrapper__menu-item mr-[64px]">
             <Link to={DETAILS} className="wrapper__menu-item-link ">
