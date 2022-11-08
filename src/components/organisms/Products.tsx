@@ -17,9 +17,9 @@ function Products() {
     <div className="w-full">
       <div className="product">
         <h2 className="text-[16px] font-normal mt-[21px] mb-[13px] sm:mt-[58px] sm:mb-[39px] sm:text-[33px]">Shop The Latest</h2>
-        <p className="product__view">
+        <Link to="*" className="product__view">
           View All
-        </p>
+        </Link>
       </div>
       <div className="product__grid">
         <div className="relative z-0 sm:p-0 rounded-md">
