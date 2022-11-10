@@ -24,19 +24,19 @@ function Products() {
         </Link>
       </div>
       <div className="product__grid">
-        <div className="relative z-0 sm:p-0 rounded-md">
+        <Link to="*" className="relative z-0 sm:p-0 rounded-md">
           <img src={product1} className="product__grid-img" alt="product1" />
           <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
             <Car className="w-[25px] h-[25px]" />
             <Eye className="w-[25px] h-[25px]" />
             <Heart className="fill-black" />
           </span>
-          <Link to="*" className="sm:space-y-[10px]">
+          <div className="sm:space-y-[10px]">
             <p className="product__grid-title">Lira Earrings</p>
             <p className="product__grid-price"> $ 20,00</p>
-          </Link>
-        </div>
-        <div className="relative sm:p-0 rounded-md">
+          </div>
+        </Link>
+        <Link to="*" className="relative sm:p-0 rounded-md">
           <img src={product2} className="product__grid-img" alt="product2" />
           <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
             <Car className="w-[25px] h-[25px]" />
@@ -51,8 +51,8 @@ function Products() {
               {window.innerWidth < 767 ? "$ 30,00" : "$ 25,00"}
             </p>
           </div>
-        </div>
-        <div className="relative my-[24px] rounded-md col-span-2 z-0 sx:hidden">
+        </Link>
+        <Link to="*" className="relative my-[24px] rounded-md col-span-2 z-0 sx:hidden">
           <div className="absolute z-10 top-[3%] xs:top-[5%] ml-1.5">
             <span className="bg-gold text-white font-normal text-[12px] mr-2 px-[8px] py-[5px] rounded-[4px]">
               Earring
@@ -64,13 +64,13 @@ function Products() {
           </div>
           <img
             src={product3}
-            className="z-0 w-full h-[135px] object-cover rounded-[4px]"
+            className="z-0 w-full h-[135px] xs:h-[180px] object-cover rounded-[4px]"
             alt="product3"
           />
-        </div>
+        </Link>
         {window.innerWidth > 767 ? (
           <>
-            <div className="relative sm:p-0 sm:mr-0 rounded-md">
+            <Link to="*" className="relative sm:p-0 sm:mr-0 rounded-md">
               <img
                 src={product4}
                 className="product__grid-img"
@@ -85,8 +85,8 @@ function Products() {
                 <p className="product__grid-title">Kaede Hair Pin Set Of 3</p>
                 <p className="product__grid-price"> $ 30,00</p>
               </div>
-            </div>
-            <div className="relative sm:p-0  rounded-md">
+            </Link>
+            <Link to="*" className="relative sm:p-0  rounded-md">
               <img
                 src={product31}
                 className="product__grid-img"
@@ -101,10 +101,10 @@ function Products() {
                 <p className="product__grid-title">Hair Pin Set of 3</p>
                 <p className="product__grid-price"> $ 30,00</p>
               </div>
-            </div>
+            </Link>
           </>
         ) : null}
-        <div className="relative sm:p-0  rounded-md">
+        <Link to="*" className="relative sm:p-0  rounded-md">
           <img src={product32} className="product__grid-img" alt="product4" />
           <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
             <Car className="w-[25px] h-[25px]" />
@@ -119,8 +119,8 @@ function Products() {
               {window.innerWidth < 767 ? "$ 30.00" : "$ 19.00"}
             </p>
           </div>
-        </div>
-        <div className="relative sm:p-0  rounded-md">
+        </Link>
+        <Link to="*" className="relative sm:p-0  rounded-md">
           <img src={product5} className="product__grid-img" alt="product5" />
           <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
             <Car className="w-[25px] h-[25px]" />
@@ -135,7 +135,7 @@ function Products() {
             </p>
             <p className="product__grid-price"> $ 29,00</p>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

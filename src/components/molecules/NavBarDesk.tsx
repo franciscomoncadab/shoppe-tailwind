@@ -37,7 +37,7 @@ function NavBarDesk() {
         <ul className="wrapper__menuIcon">
           <li>
             <Link to={NOTFOUND} className="wrapper__menuIcon-link-icon">
-              <Lens />
+              <Lens className="fill-black" />
             </Link>
           </li>
           <li>
