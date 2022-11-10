@@ -24,7 +24,7 @@ function Footer() {
             placeholder="Give an email, get the newsletter."
           />
           <Arrow className="footer__give-arrow" />
-          <div className="absolute flex flex-start mt-16 sx:hidden">
+          <div className="absolute flex flex-start mt-[57px] sx:hidden">
             <br />
             <input
               type="checkbox"
@@ -32,7 +32,7 @@ function Footer() {
               onChange={handleChange}
               checked={check}
             />{" "}
-            <p className="font-medium mb-1 ml-1">
+            <p className="font-normal text-[12px] mb-1 ml-1">
               I agree to the website's terms and conditions
             </p>
           </div>
@@ -40,22 +40,22 @@ function Footer() {
         <div className="footer__info">
           <div className="footer__info-colum">
             <div>
-              <ul className="text-dark-gray sm:font-normal sm:text-[16px] hover:text-black">
-                <li className="mb-[8px]">
+              <ul className="text-dark-gray font-normal text-[12px] sm:text-[16px] hover:text-black">
+                <li className="">
                   <a href=".">CONTACT</a>
                 </li>
               </ul>
             </div>
             <div>
-              <ul className="text-dark-gray sm:font-normal sm:text-[16px] hover:text-black">
-                <li className="mb-[8px]">
+              <ul className="text-dark-gray font-normal text-[12px] sm:text-[16px] hover:text-black">
+                <li className="mt-[2px]">
                   <a href=".">TERMS OF SERVICES</a>
                 </li>
               </ul>
             </div>
             <div>
-              <ul className="text-dark-gray sm:font-normal sm:text-[16px] hover:text-black">
-                <li className="mb-[32px] sx:mb-0">
+              <ul className="text-dark-gray font-normal text-[12px] sm:text-[16px] hover:text-black">
+                <li className="mt-[2px] mb-[28px] sx:mb-0">
                   <a href=".">SHIPPING AND RETURNS</a>
                 </li>
               </ul>
@@ -64,12 +64,12 @@ function Footer() {
         </div>
         
         <div className="footer__shelly">
-          <div className="flex mt-2 mb-12 space-x-6 sm:mr-0 sm:space-x-[30px] sm:mt-[40px] sm:mb-0 sx:justify-center sx:mr-14">
-            <span className="relative flex flex-start sx:hidden">
+          <div className="flex mt-2 mb-[36px] space-x-[7.33px] sm:mr-0 sm:space-x-[30px] sm:mt-[40px] sm:mb-0 sx:justify-center sx:mr-14">
+            <span className="relative flex flex-start font-normal text-[12px] sx:hidden">
               {" "}
               Follow us
               {"   "}
-              <span className="px-2 sx:hidden">_____</span>
+              <span className="ml-[16px] sx:hidden">_______</span>
             </span>
             <a href=".">
               <Linkedin className="hidden sm:block fill-dark-gray hover:fill-black" />
@@ -91,7 +91,7 @@ function Footer() {
              <Twitter className="fill-dark-gray hover:fill-black" /> 
             </a>
           </div>
-          <span className="text-sm text-dark-gray sm:mt-[47px] sm:space-x-[3px] sm:font-normal sm:text-[16px] sm:mb-0 mb-4 sx:flex-start">
+          <span className="text-[12px] text-dark-gray sm:mt-[47px] sm:space-x-[3px] font-normal sm:text-[16px] sm:mb-0 mb-4 sx:flex-start">
             <a href="." className="text-dark-gray sm:font-normal sm:text-[16px] hover:underline">
               © 2021 Shelly
             </a>
