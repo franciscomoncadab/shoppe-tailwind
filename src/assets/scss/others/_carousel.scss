@@ -45,10 +45,16 @@
       border-radius: 10px;
      }
 
+     @media (min-width: 840px) {
+      width: screen;
+      height: 490px;
+      border-radius: 10px;
+     }
+
      @media (min-width: 1280px) {
       width: 1248px;
       height: 646px;
-      border-radius: 12px;
+      border-radius: 16px;
      }
     
    }
@@ -58,6 +64,10 @@
     transition: 300ms opacity;
     transform: translate3d(0, 0, 0);
     z-index: 10;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     &.swiper-pagination-hidden {
       opacity: 0;
     }
@@ -71,12 +81,12 @@
   .swiper-pagination-custom,
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 22px;
+    bottom: 25px;
     left: 0;
     width: 100%;
 
     @media (max-width: 768px) {
-      bottom: 3.5px;
+      bottom: 6.5px;
     }
   }
    

@@ -64,7 +64,7 @@ function Footer() {
         </div>
         
         <div className="footer__shelly">
-          <div className="flex mt-2 mb-[36px] space-x-[7.33px] sm:mr-0 sm:space-x-[30px] sm:mt-[40px] sm:mb-0 sx:justify-center sx:mr-14">
+          <div className="flex mt-2 mb-[36px] sx:space-x-[25px] gap-x-2 sm:mr-0 sm:gap-x-0 sm:space-x-[30px] sm:mt-[40px] sm:mb-0 sx:justify-center sx:mr-14">
             <span className="relative flex flex-start font-normal text-[12px] sx:hidden">
               {" "}
               Follow us
@@ -72,23 +72,22 @@ function Footer() {
               <span className="ml-[16px] sx:hidden">_______</span>
             </span>
             <a href=".">
-              <Linkedin className="hidden sm:block fill-dark-gray hover:fill-black" />
+              <Linkedin className="hidden sx:block fill-dark-gray hover:fill-black" />
             </a>
             <a
               href="."
             >
-              <Facebook className="fill-dark-gray hover:fill-black" />
+              <Facebook className="fill-dark-gray hover:fill-black w-[6.67px] h-[12px] mt-[6px] sx:mt-0 sx:w-auto sx:h-auto"/>
             </a>
             <a
               href="."
             >
-             <Instagram className="fill-dark-gray hover:fill-black" /> 
+             <Instagram className="fill-dark-gray hover:fill-black w-[12px] h-[12px] mt-[6px] sx:mt-0 sx:w-auto sx:h-auto"/> 
             </a>
             <a
               href="."
-              
             >
-             <Twitter className="fill-dark-gray hover:fill-black" /> 
+             <Twitter className="fill-dark-gray hover:fill-black w-[14.12px] h-[12px] mt-[6px] sx:mt-0 sx:w-auto sx:h-auto"/> 
             </a>
           </div>
           <span className="text-[12px] text-dark-gray sm:mt-[47px] sm:space-x-[3px] font-normal sm:text-[16px] sm:mb-0 mb-4 sx:flex-start">

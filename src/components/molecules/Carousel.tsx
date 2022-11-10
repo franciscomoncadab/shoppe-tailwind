@@ -16,7 +16,7 @@ function Carousel() {
       <div>
         <Swiper
           loop={false}
-          spaceBetween={window.innerWidth < 560 ? 10 : 40}
+          spaceBetween={window.innerWidth < 560 ? 10 : 140}
           slidesPerView={window.innerWidth < 560 ? 2.38 : 3}
           freeMode={false}
           watchSlidesProgress={true}
