@@ -16,33 +16,33 @@ function Carousel() {
       <div>
         <Swiper
           loop={false}
-          spaceBetween={window.innerWidth < 560 ? 10 : 140}
-          slidesPerView={window.innerWidth < 560 ? 2.38 : 3}
+          spaceBetween={window.innerWidth < 412 ? 7 : 30}
+          slidesPerView={window.innerWidth < 413 ? 2.28 : 3}
           freeMode={false}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
-          className="mySwiper w-screen"
+          className="mySwiper"
         >
           <SwiperSlide>
-            <button className="border-solid border-[1px] border-dark-gray rounded-[4px]">
+            <Link to="*" className="border-solid border-[1px] border-dark-gray rounded-[4px]">
               <p className="text-[12px] py-[10px] px-[50px] font-normal">Earring</p>
-            </button>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <button className="border-solid border-[1px] border-dark-gray rounded-[4px]">
+            <Link to="*" className="border-solid border-[1px] border-dark-gray rounded-[4px]">
               <p className="text-[12px] px-[45px] py-[10px] font-normal">Necklace</p>
-            </button>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <button className="border-solid border-[1px] border-dark-gray rounded-[4px]">
+            <Link to="*"className="border-solid border-[1px] border-dark-gray rounded-[4px]">
               <p className="text-[12px] px-[48px] py-[10px] font-normal">Others</p>
-            </button>
+            </Link>
           </SwiperSlide>
         </Swiper>
       </div>
       <div className="mt-[16px] sm:mt-[5px]">
         <Swiper
-          spaceBetween={20}
+          spaceBetween={10}
           autoplay={
             window.innerWidth > 873
               ? true
@@ -57,7 +57,7 @@ function Carousel() {
             bulletActiveClass: "swiper-pagination-bullet-active",
           }}
           modules={[Pagination, Navigation, Autoplay]}
-          className="swiper rounded-md"
+          className="swiper"
         >
           {infoSlider.map((info, index) => {
             return (
@@ -69,7 +69,7 @@ function Carousel() {
                       alt="imgs"
                     />
                   </div>
-                  <div className="absolute z-10 top-[180px] sm:w-full sm:top-[222px] text-left">
+                  <div className="absolute z-10 top-[180px] sx:top-[280px] sm:w-full sm:top-[222px] text-left">
                     <p className="text-white text-[20px] font-medium sm:text-[33px] ml-[8px] sm:ml-[39px]">
                       {info.title}
                     </p>
