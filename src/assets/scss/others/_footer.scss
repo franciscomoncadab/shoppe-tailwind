@@ -1,7 +1,6 @@
 .footer {
      @apply
-     pt-10
-     sm:pt-0
+     mt-[78px]
      sm:mt-[250px];
 
           hr {
@@ -33,8 +32,9 @@
                &-input{
                     @apply
                     w-full
+                    text-[12px]
                     sm:text-[16px]
-                    sm:font-normal
+                    font-normal
                     border-b-[1px]
                     sm:pb-[13px]
                     mb-3 
@@ -44,10 +44,10 @@
                &-arrow {
                     @apply
                     absolute 
-                    w-5 
-                    h-5
-                    right-[1%]                   
-                    bottom-[40%]
+                    w-[15px]
+                    h-[7.25px]
+                    right-[0.1%]                   
+                    bottom-[60%]
                     sm:w-[26px]
                     sm:h-[12px]
                     sx:right-[1%]
@@ -60,7 +60,7 @@
 
           &__info {
                @apply
-               mt-[80px]
+               mt-[60px]
                sx:mt-0
                sm:mt-[5px];
 

@@ -53,11 +53,12 @@
           &-counter{
                @apply
                hidden
+               w-[102px]
                sm:bg-light-gray
                sm:h-[53px]
                sm:flex
                sm:flex-row
-               sm:rounded-md;
+               sm:rounded-[4px];
           }
      }
 }

@@ -50,14 +50,14 @@ function TextProducts() {
       <div className="textProducts__addCar">
         <div className="textProducts__addCar-counter">
           <input
-            className="items-center text-black font-normal text-[16px] w-[28.5px] cursor-pointer hover:bg-gray rounded-md"
+            className="items-center text-black font-normal text-[16px] w-[32px] cursor-pointer hover:bg-gray rounded-md"
             type="button"
             value="-"
             onClick={handlerCounter}
           />
-          <p className="justify-center item-center text-black text-base p-[19px]">{counter}</p>
+          <span className="text-center text-black text-normal text-[16px] p-[16px]">{counter}</span>
           <input
-            className="items-center text-black font-normal text-[16px] w-[28.5px] cursor-pointer hover:bg-gray rounded-md"
+            className="items-center text-black font-normal text-[16px] w-[32px] cursor-pointer hover:bg-gray rounded-md"
             type="button"
             value="+"
             onClick={() => {
@@ -65,7 +65,7 @@ function TextProducts() {
             }}
           />
         </div>
-        <button className="mt-6 mb-6 border-[1px] py-2 rounded-md w-full hover:bg-black hover:text-white sm:border-[1px] sm:py-[14px] sm:px-20 sm:w-[73%] sm:rounded-md">
+        <button className="mt-6 mb-6 border-[1px] py-2 rounded-[4px] w-full hover:bg-black hover:text-white sm:border-[1px] sm:py-[14px] sm:px-[78px] sm:w-[72%] sm:rounded-md">
           <Link to="*" className="text-[12px] font-normal sm:text-[16px] sm:font-bold">
             ADD TO CART
           </Link>
