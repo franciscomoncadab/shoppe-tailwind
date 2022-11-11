@@ -2,6 +2,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper";
 import { ReactComponent as Next } from "../../assets/icons/next.svg";
+import { ReactComponent as Car } from "../../assets/icons/car.svg";
+import { ReactComponent as Eye } from "../../assets/icons/eye.svg";
+import { ReactComponent as Heart } from "../../assets/icons/heartIcon.svg";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
@@ -28,22 +31,37 @@ function SimilarItems() {
         className="_mySwiperS mt-[44px]"
       >
         <SwiperSlide className="_swiper-slide">
-          <Link to="*">
-            <img src={similar1} alt="img1" className="transition hover:ease-in duration-500 hover:scale-110" />
+          <Link to="*" className="relative z-0">
+            <img src={similar1} alt="img1" />
+            <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
+            <Car className="w-[25px] h-[25px]" />
+            <Eye className="w-[25px] h-[25px]" />
+            <Heart className="fill-black" />
+            </span>
             <p className="mt-[24px] text-left text-[20px] font-normal hover:underline">Plaine Necklace</p>
             <p className="text-gold text-left text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
           </Link>
         </SwiperSlide>
         <SwiperSlide className="_swiper-slide">
           <Link to="*">
-            <img src={similar2} alt="img2" className="transition hover:ease-in duration-500 hover:scale-110" />
+            <img src={similar2} alt="img2" />
+            <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
+            <Car className="w-[25px] h-[25px]" />
+            <Eye className="w-[25px] h-[25px]" />
+            <Heart className="fill-black" />
+            </span>
             <p className="mt-[24px] text-left text-[20px] font-normal hover:underline">Ollie Earrings</p>
             <p className="text-gold text-left text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
           </Link>
         </SwiperSlide>
         <SwiperSlide className="_swiper-slide">
           <Link to="*">
-            <img src={similar3} alt="img3" className="transition hover:ease-in duration-500 hover:scale-110" />
+            <img src={similar3} alt="img3" />
+            <span className="image-container hidden absolute z-10 top-[174px] left-[119px]">
+            <Car className="w-[25px] h-[25px]" />
+            <Eye className="w-[25px] h-[25px]" />
+            <Heart className="fill-black" />
+            </span>
             <p className="mt-[24px] text-left text-[20px] font-normal hover:underline">Kaede Hair Pin</p>
             <p className="text-gold text-left text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
           </Link>

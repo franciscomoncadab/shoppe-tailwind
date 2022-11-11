@@ -27,14 +27,13 @@
                     cursor-pointer 
                     rounded-t-lg
                     inline-block
-                    focus:underline
-                    focus:underline-offset-[40px]
+                    active:underline
+                    active:underline-offset-[40px]
                     hover:border-black
                     focus:border-black;
 
                }
           }
-
      
      }
 

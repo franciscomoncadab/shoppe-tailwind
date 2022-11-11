@@ -4,7 +4,7 @@
      sm:text-dark-gray
      sm:border-b
      sm:border-gray
-     sm:mt-[115px];
+     sm:mt-[99px];
 
      &__list{
           @apply
@@ -19,8 +19,8 @@
                text-base
                sm:text-[20px]
                sm:font-normal
-               sm:focus:underline
-               sm:focus:underline-offset-[34px]
+               sm:active:underline
+               sm:active:underline-offset-[34px]
                sm:inline-block
                sm:rounded-t-lg
                sm:mb-[20px]

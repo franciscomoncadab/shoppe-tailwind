@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import IconsProducts from "../atoms/IconsProducts";
+import FiveStars from "../../assets/images/fiveStars.png";
 import { ReactComponent as Share } from "../../assets/icons/share.svg";
-import Rating from "../atoms/Rating";
 import "../../assets/scss/main.scss";
 
 function TextProducts() {
@@ -32,15 +32,16 @@ function TextProducts() {
         )}
       </span>
       <div className="textProducts__rating">
-        <Rating 
-          color="text-gray"
+        <img 
+          src={FiveStars}
+          alt="imgStar"
         />
-        <p className="text-dark-gray font-normal text-[16px] ml-[15px]">1 customer review</p>
+        <p className="text-dark-gray font-normal text-[16px] ml-[22px]">1 customer review</p>
       </div>
       <p
         className={`${
           window.innerWidth < 767 ? "hidden" : "visible"
-        } sm:text-[16px] sm:font-normal sm:ml-[14px] sm:mt-[19px] sm:text-dark-gray`}
+        } sm:text-[16px] sm:font-normal sm:ml-[14px] sm:mt-[22px] sm:text-dark-gray`}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
         placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a
