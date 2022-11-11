@@ -38,12 +38,12 @@ function FormReview() {
           Your Rating*
         </p>
         <div className=" mt-[13.39px]">
-          <Ratings />
+          <Ratings className="hover:fill-black"/>
         </div>
       </div>
       <button
         type="submit"
-        className="text-white bg-black hover:bg-white hover:text-black hover:border-[1px] mt-[50px] h-[53px] w-[123px] font-bold rounded-[4px] text-[16px] px-5 py-2.5 text-center cursor-pointer"
+        className="text-white bg-black hover:bg-white hover:transition duration-300 hover:ease-in hover:text-black hover:border-[1px] mt-[50px] h-[53px] w-[123px] font-bold rounded-[4px] text-[16px] px-5 py-2.5 text-center cursor-pointer"
       >
         Submit
       </button>
