@@ -76,7 +76,7 @@ function Carousel() {
                     <p className="text-white font-normal text-[12px] sm:text-[26px] ml-[8px] sm:ml-[39px] sm:mt-[8px]">
                       {info.price}
                     </p>
-                    <button className="rounded-[4px] border-[1px] text-white ml-[8px] mt-[12px] sm:ml-[39px] py-[3px] sm:py-[9.5px] sm:px-[32px] px-[10px] sm:mt-[48px] hover:bg-opacity-50 hover:bg-white hover:border-white text-center">
+                    <button className="rounded-[4px] border-[1px] hover:transition duration-300 hover:ease-in text-white ml-[8px] mt-[12px] sm:ml-[39px] py-[3px] sm:py-[9.5px] sm:px-[32px] px-[10px] sm:mt-[48px] hover:bg-opacity-50 hover:bg-white hover:border-white text-center">
                       <Link
                         to="*"
                         className="text-center text-[12px] font-normal sm:font-bold sm:text-[20px]"

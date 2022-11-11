@@ -12,6 +12,7 @@ import "../../assets/scss/others/_similarItems.scss";
 import similar1 from "../../assets/images/Img032.png";
 import similar2 from "../../assets/images/Img02.png";
 import similar3 from "../../assets/images/Img04.png";
+import { Link } from "react-router-dom";
 
 function SimilarItems() {
   return (
@@ -27,25 +28,25 @@ function SimilarItems() {
         className="_mySwiperS mt-[44px]"
       >
         <SwiperSlide className="_swiper-slide">
-          <div>
-            <img src={similar1} alt="img1"  />
-            <p className="mt-[24px] text-left text-[20px] font-normal">Plaine Necklace</p>
-            <p className="text-gold text-left text-[20px] font-medium mt-[10px]"> $ 30,00</p>
-          </div>
+          <Link to="*">
+            <img src={similar1} alt="img1" className="transition hover:ease-in duration-500 hover:scale-110" />
+            <p className="mt-[24px] text-left text-[20px] font-normal hover:underline">Plaine Necklace</p>
+            <p className="text-gold text-left text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
+          </Link>
         </SwiperSlide>
         <SwiperSlide className="_swiper-slide">
-          <div className="">
-            <img src={similar2} alt="img2"  />
-            <p className="mt-[24px] text-left text-[20px] font-normal">Ollie Earrings</p>
-            <p className="text-gold text-left text-[20px] font-medium mt-[10px]"> $ 30,00</p>
-          </div>
+          <Link to="*">
+            <img src={similar2} alt="img2" className="transition hover:ease-in duration-500 hover:scale-110" />
+            <p className="mt-[24px] text-left text-[20px] font-normal hover:underline">Ollie Earrings</p>
+            <p className="text-gold text-left text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
+          </Link>
         </SwiperSlide>
         <SwiperSlide className="_swiper-slide">
-          <div className="">
-            <img src={similar3} alt="img3"  />
-            <p className="mt-[24px] text-left text-[20px] font-normal">Kaede Hair Pin</p>
-            <p className="text-gold text-left text-[20px] font-medium mt-[10px]"> $ 30,00</p>
-          </div>
+          <Link to="*">
+            <img src={similar3} alt="img3" className="transition hover:ease-in duration-500 hover:scale-110" />
+            <p className="mt-[24px] text-left text-[20px] font-normal hover:underline">Kaede Hair Pin</p>
+            <p className="text-gold text-left text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
+          </Link>
         </SwiperSlide>
       </Swiper>
       <div className="px-3 mt-8 mb-10 flex justify-between sm:px-12 sm:hidden ">
