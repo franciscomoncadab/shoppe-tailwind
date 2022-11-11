@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Ratings } from "../../assets/icons/rating.svg";
+import Rating from "./Rating";
 
 function FormReview() {
   return (
@@ -37,13 +37,13 @@ function FormReview() {
         <p className="font-normal text-[14px] text-dark-gray mt-[46px]">
           Your Rating*
         </p>
-        <div className=" mt-[13.39px]">
-          <Ratings className="hover:fill-black"/>
+        <div className=" mt-[9.39px]">
+          <Rating color="text-gray" />
         </div>
       </div>
       <button
         type="submit"
-        className="text-white bg-black hover:bg-white hover:transition duration-300 hover:ease-in hover:text-black hover:border-[1px] mt-[50px] h-[53px] w-[123px] font-bold rounded-[4px] text-[16px] px-5 py-2.5 text-center cursor-pointer"
+        className="text-white bg-black hover:bg-white hover:transition duration-300 hover:ease-in hover:text-black hover:border-[1px] mt-[39px] h-[53px] w-[122px] font-bold rounded-[4px] text-[16px] px-5 py-2.5 text-center cursor-pointer"
       >
         Submit
       </button>

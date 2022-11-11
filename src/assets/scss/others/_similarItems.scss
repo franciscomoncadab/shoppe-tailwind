@@ -44,5 +44,16 @@
       width: 380px;
       height: 380px;
       border-radius: 12px;
+
+      &:hover{
+        opacity: 0.3;
+      }
+
+      &:hover ~ span{
+        display: flex;
+        flex-direction: row;
+        gap: 30.69px;
+        pointer-events: none;
+      }
      }
    }
