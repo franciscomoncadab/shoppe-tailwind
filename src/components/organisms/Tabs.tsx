@@ -60,7 +60,7 @@ function Tags() {
       ) : (
         <div>
           <TabsM />
-          <hr className="my-3 mx-3 text-gray" />
+          <hr className="my-3 text-gray" />
         </div>
       )}
     </div>

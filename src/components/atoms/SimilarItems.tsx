@@ -20,15 +20,15 @@ import { Link } from "react-router-dom";
 function SimilarItems() {
   return (
     <div>
-      <h1 className="my-2 text-[16px] px-3 font-normal sm:px-0 sm:text-[26px] sm:mt-[96px]">Similar Items</h1>
+      <h1 className="my-2 text-[16px] font-normal sm:px-0 sm:text-[26px] sm:mt-[96px]">Similar Items</h1>
       <Swiper
         loop={true}
         spaceBetween={(window.innerWidth < 560 ? 10 : 54) }
-        slidesPerView={window.innerWidth < 560 ? 2.4 : 3}
+        slidesPerView={window.innerWidth < 560 ? 2.5 : 3}
         freeMode={false}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="_mySwiperS mt-[44px]"
+        className="_mySwiperS mt-[13px] sm:mt-[44px]"
       >
         <SwiperSlide className="_swiper-slide">
           <Link to="*" className="relative z-0">
@@ -38,8 +38,8 @@ function SimilarItems() {
             <Eye className="w-[25px] h-[25px]" />
             <Heart className="fill-black" />
             </span>
-            <p className="mt-[24px] text-left text-[20px] font-normal hover:underline">Plaine Necklace</p>
-            <p className="text-gold text-left text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
+            <p className="mt-[24px] text-left text-[14px] sx:text-[20px] font-normal hover:underline">Plaine Necklace</p>
+            <p className="text-gold text-left text-[12px] sx:text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
           </Link>
         </SwiperSlide>
         <SwiperSlide className="_swiper-slide">
@@ -50,8 +50,8 @@ function SimilarItems() {
             <Eye className="w-[25px] h-[25px]" />
             <Heart className="fill-black" />
             </span>
-            <p className="mt-[24px] text-left text-[20px] font-normal hover:underline">Ollie Earrings</p>
-            <p className="text-gold text-left text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
+            <p className="mt-[24px] text-left text-[14px] sx:text-[20px] font-normal hover:underline">Ollie Earrings</p>
+            <p className="text-gold text-left text-[12px] sx:text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
           </Link>
         </SwiperSlide>
         <SwiperSlide className="_swiper-slide">
@@ -62,12 +62,12 @@ function SimilarItems() {
             <Eye className="w-[25px] h-[25px]" />
             <Heart className="fill-black" />
             </span>
-            <p className="mt-[24px] text-left text-[20px] font-normal hover:underline">Kaede Hair Pin</p>
-            <p className="text-gold text-left text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
+            <p className="mt-[24px] text-left text-[14px] sx:text-[20px] font-normal hover:underline">Kaede Hair Pin</p>
+            <p className="text-gold text-left text-[12px] sx:text-[20px] font-medium mt-[10px] hover:underline"> $ 30,00</p>
           </Link>
         </SwiperSlide>
       </Swiper>
-      <div className="px-3 mt-8 mb-10 flex justify-between sm:px-12 sm:hidden ">
+      <div className="mt-8 mb-10 flex justify-between sm:px-12 sm:hidden ">
         <p className="text-gold text-sm">Continue shipping</p>
         <Next className="mt-1" />
       </div>

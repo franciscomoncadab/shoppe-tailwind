@@ -4,13 +4,13 @@ import Trigger from "../atoms/Trigger";
 
 function TabsM() {
   return (
-    <div className="px-3 w-full">
+    <div className="w-full">
       <Collapsible
         trigger={<Trigger text={"Description"} />}
         triggerClassName="text-base"
         triggerWhenOpen={<Trigger text={"Description"} />}
         transitionTime={200}
-        className="my-2"
+        className="mb-2"
       >
         <p className="text-xs p-2 text-justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
