@@ -1,7 +1,7 @@
 import React from "react";
 import TextProducts from "./TextProducts";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/scss";
+
 import "swiper/scss/pagination";
 import { Pagination, Navigation } from "swiper";
 import {imgProduct} from "../productImg"
@@ -13,6 +13,7 @@ function DetailsImageM() {
     <div>
       <div>
       <Swiper
+        spaceBetween={18}
         pagination={{
           type: "progressbar",
           progressbarFillClass: "swiper-pagination-progressbar-fill",
@@ -20,14 +21,15 @@ function DetailsImageM() {
         }}
         navigation={false}
         modules={[Pagination, Navigation]}
-        className="__swiper h-full"
+        className="__swiper overflow-y-visible"
       >
         {imgProduct.map((img, i) => {
           return (
-               <SwiperSlide key={i} className="__mySwiperSlide h-full">
+               <SwiperSlide key={i} className="__swiper-slide">
                     <img 
                          src={`./images/${img.img}`}
                          alt="imgMobile"
+                         className=""
                     />
                </SwiperSlide>
           )
