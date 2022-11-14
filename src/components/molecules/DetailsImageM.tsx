@@ -21,7 +21,7 @@ function DetailsImageM() {
         }}
         navigation={false}
         modules={[Pagination, Navigation]}
-        className="__swiper overflow-y-visible"
+        className="__swiper "
       >
         {imgProduct.map((img, i) => {
           return (
