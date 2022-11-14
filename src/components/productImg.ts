@@ -1,14 +1,18 @@
 export const imgProduct = [
      {
-          img: "./images/img2.jpg",
+          img: "img2.jpg",
+          id: 2
      },
      {
-          img: "./images/img3.jpg",
+          img: "img3.jpg",
+          id: 3
      },
      {
-          img: "./images/img4.jpg",
+          img: "img4.jpg",
+          id: 4
      },
      {
-          img: "./images/img5.jpg",
+          img: "img5.jpg",
+          id: 5
      },
 ]
