@@ -10,12 +10,11 @@ function DetailsImage() {
   const [img2Active, setImg2Active] = useState(false);
   const [img3Active, setImg3Active] = useState(false);
   const [img4Active, setImg4Active] = useState(false);
-  const [imgActive, setImgActive] = useState(2);
+  const [imgActive, setImgActive] = useState("./images/img2.jpg");
 
-  const handleChange = (data: any) => {
+  const handleChange = (data: any, index: number) => {
     if (data.id >= 2 && data.id <= 5) {
       setImgActive(data.id);
-      console.log(data.img, data.id);
     }
     if (data.id === 2) {
       setImg1Active(true);
@@ -23,21 +22,21 @@ function DetailsImage() {
       setImg3Active(false);
       setImg4Active(false);
     } else if (data.id === 3) {
-      setImg2Active(true);
       setImg1Active(false);
+      setImg2Active(true);
       setImg3Active(false);
       setImg4Active(false);
     } else if (data.id === 4) {
-      setImg3Active(true);
       setImg1Active(false);
-      setImg2Active(false);
+      setImg3Active(true);
+      setImg3Active(false);
       setImg4Active(false);
     } else if (data.id === 5) {
-      setImg4Active(true);
       setImg1Active(false);
-      setImg2Active(false);
+      setImg4Active(true);
       setImg3Active(false);
-    }
+      setImg4Active(false);
+    } 
   };
 
   return (
@@ -49,12 +48,21 @@ function DetailsImage() {
               <ul className="hidden sm:flex sm:flex-col sm:gap-[40px] stroke-0">
                 {imgProduct.map((data, index) => {
                   return (
-                    <li key={index}>
+                    <li
+                    key={index}
+                    value={data.id}
+                    onClick={() => {
+                      let elem = document.getElementById(data.id.toString())
+                      console.log(elem)
+                      setImgActive(elem!.attributes[0].value.toString())
+                    }}
+                    >
                       <img
                         src={`./images/${data.img}`}
+                        id={data.id.toString()}
                         alt="products"
                         className="w-[120px] h-[120px] rounded-md cursor-pointer object-cover"
-                        onClick={() => handleChange(data)}
+                        
                       />
                     </li>
                   );
@@ -62,7 +70,7 @@ function DetailsImage() {
               </ul>
               <img
                 className="w-[540px] h-[600px] object-cover rounded-md"
-                src={`./images/img${imgActive}.jpg`}
+                src={imgActive}
                 alt="img5"
               />
             </div>
