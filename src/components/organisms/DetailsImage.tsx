@@ -12,10 +12,7 @@ function DetailsImage() {
   const [img4Active, setImg4Active] = useState(false);
   const [imgActive, setImgActive] = useState("./images/img2.jpg");
 
-  const handleChange = (data: any, index: number) => {
-    if (data.id >= 2 && data.id <= 5) {
-      setImgActive(data.id);
-    }
+  const handleChange = (data: any) => {
     if (data.id === 2) {
       setImg1Active(true);
       setImg2Active(false);
@@ -41,7 +38,7 @@ function DetailsImage() {
 
   return (
     <div>
-      {window.innerWidth > 548 ? (
+      {window.innerWidth > 840 ? (
         <div>
           <div className="sm:flex sm:flex-row sm:justify-center sm:gap-x-[50px] sm:m-auto sm:w-full sm:h-full">
             <div className="w-full sm:h-full sm:flex sm:flex-col-2 sm:gap-[39px] sm:w-[699px] md:w-[58.78%] sm:px-0">
@@ -62,8 +59,8 @@ function DetailsImage() {
                         id={data.id.toString()}
                         alt="products"
                         className="w-[120px] h-[120px] rounded-md cursor-pointer object-cover"
-                        
-                      />
+                        onClick={handleChange}
+                        />
                     </li>
                   );
                 })}
