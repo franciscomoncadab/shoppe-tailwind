@@ -67,10 +67,10 @@ function SimilarItems() {
           </Link>
         </SwiperSlide>
       </Swiper>
-      <div className="mt-8 mb-10 flex justify-between sm:px-12 sm:hidden ">
+      <Link to="*"className="mt-8 mb-10 flex justify-between sm:px-12 sm:hidden ">
         <p className="text-gold text-sm">Continue shipping</p>
         <Next className="mt-1" />
-      </div>
+      </Link>
     </div>
   );
 }

@@ -26,19 +26,19 @@ function DetailsImage() {
     } else if (data.id === 4) {
       setImg1Active(false);
       setImg3Active(true);
-      setImg3Active(false);
+      setImg2Active(false);
       setImg4Active(false);
     } else if (data.id === 5) {
       setImg1Active(false);
       setImg4Active(true);
       setImg3Active(false);
-      setImg4Active(false);
+      setImg2Active(false);
     } 
   };
 
   return (
     <div>
-      {window.innerWidth > 840 ? (
+      {window.innerWidth > 1020 ? (
         <div>
           <div className="sm:flex sm:flex-row sm:justify-center sm:gap-x-[50px] sm:m-auto sm:w-full sm:h-full">
             <div className="w-full sm:h-full sm:flex sm:flex-col-2 sm:gap-[39px] sm:w-[699px] md:w-[58.78%] sm:px-0">
@@ -52,14 +52,14 @@ function DetailsImage() {
                       let elem = document.getElementById(data.id.toString())
                       console.log(elem)
                       setImgActive(elem!.attributes[0].value.toString())
+                      handleChange(data)
                     }}
                     >
                       <img
                         src={`./images/${data.img}`}
                         id={data.id.toString()}
                         alt="products"
-                        className="w-[120px] h-[120px] rounded-md cursor-pointer object-cover"
-                        onClick={handleChange}
+                        className="w-[120px] h-[120px] rounded-md cursor-pointer object-cover"                        
                         />
                     </li>
                   );
