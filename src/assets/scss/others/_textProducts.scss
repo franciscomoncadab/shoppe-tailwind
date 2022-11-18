@@ -10,12 +10,12 @@
 
      &__product{
           @apply
-          text-2xl
-          font-medium
+          text-[20px]
+          font-normal
           mt-[40px]
+          mb-[5px]
           sm:mt-0
           sm:ml-[14px]
-          sm:font-normal
           sm:mb-[23px]
           sm:text-[26px];
      }

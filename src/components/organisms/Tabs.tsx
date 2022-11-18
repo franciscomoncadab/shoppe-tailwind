@@ -5,7 +5,7 @@ import "../../assets/scss/main.scss";
 import { DETAILS, ADITIONALINFO, REVIEWS } from "../../routes/routes";
 
 function Tags() {
-  const [isDescriptionActive, setIsDescriptionActive] = useState(false);
+  const [isDescriptionActive, setIsDescriptionActive] = useState(true);
   const [isAditionalActive, setIsAditionalActive] = useState(false);
   const [isReviewsActive, setIsReviewsActive] = useState(false);
 
