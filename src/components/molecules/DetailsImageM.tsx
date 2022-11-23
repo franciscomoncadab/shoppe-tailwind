@@ -27,7 +27,7 @@ function DetailsImageM() {
           return (
                <SwiperSlide key={i} className="__swiper-slide">
                     <img 
-                         src={`./images/${img.img}`}
+                         src={`./images/${img.images}`}
                          alt="imgMobile"
                          className=""
                     />

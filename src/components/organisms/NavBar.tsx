@@ -70,6 +70,9 @@ function NavBar() {
               <Link
                 to={HOME}
                 className="w-full text-black font-normal text-[20px] cursor-pointer"
+                onClick={() => {
+                  setMobileMenu(!mobileMenu);
+                }}
               >
                 Home
               </Link>
@@ -78,6 +81,9 @@ function NavBar() {
               <Link
                 to={DETAILS}
                 className="w-full text-black font-normal text-[20px] cursor-pointer"
+                onClick={() => {
+                  setMobileMenu(!mobileMenu);
+                }}
               >
                 Shop
               </Link>
@@ -86,6 +92,9 @@ function NavBar() {
               <Link
                 to={NOTFOUND}
                 className="w-full text-black font-normal text-[20px] cursor-pointer"
+                onClick={() => {
+                  setMobileMenu(!mobileMenu);
+                }}
               >
                 About
               </Link>
@@ -94,6 +103,9 @@ function NavBar() {
               <Link
                 to={NOTFOUND}
                 className="w-full text-black font-normal text-[20px] cursor-pointer"
+                onClick={() => {
+                  setMobileMenu(!mobileMenu);
+                }}
               >
                 Blog
               </Link>
@@ -102,6 +114,9 @@ function NavBar() {
               <Link
                 to={NOTFOUND}
                 className="w-full text-black font-normal text-[20px] cursor-pointer"
+                onClick={() => {
+                  setMobileMenu(!mobileMenu);
+                }}
               >
                 Help
               </Link>
@@ -110,6 +125,9 @@ function NavBar() {
               <Link
                 to={NOTFOUND}
                 className="w-full text-black font-normal text-[20px] cursor-pointer"
+                onClick={() => {
+                  setMobileMenu(!mobileMenu);
+                }}
               >
                 Contact
               </Link>
@@ -118,6 +136,9 @@ function NavBar() {
               <Link
                 to={NOTFOUND}
                 className="w-full text-black font-normal text-[20px] cursor-pointer"
+                onClick={() => {
+                  setMobileMenu(!mobileMenu);
+                }}
               >
                 Search
               </Link>
@@ -127,6 +148,9 @@ function NavBar() {
               <Link
                 to={NOTFOUND}
                 className="w-full text-black font-normal text-[20px] cursor-pointer"
+                onClick={() => {
+                  setMobileMenu(!mobileMenu);
+                }}
               >
                 <div className="flex space-between">
                   <User className="mr-[10px] sm:hidden mt-[4px] w-[20px] h-[20px]" />
@@ -138,6 +162,9 @@ function NavBar() {
               <Link
                 to={NOTFOUND}
                 className="w-full text-black font-normal text-[20px] cursor-pointer"
+                onClick={() => {
+                  setMobileMenu(!mobileMenu);
+                }}
               >
                 <div className="flex space-between">
                   <Logout className="mr-[10px] sm:hidden mt-[4px] w-[20px] h-[20px]" />

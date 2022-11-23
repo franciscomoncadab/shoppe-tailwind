@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import TextProducts from "../molecules/TextProducts";
 import { imgProduct } from "../productImg";
 import { ReactComponent as LargeLine } from "../../assets/icons/lineaGrande.svg";
 import { ReactComponent as SmallLine } from "../../assets/icons/lineaChiquita.svg";
 import DetailsImageM from "../molecules/DetailsImageM";
 
+export type DetailsImageProps = { images: string; id: number };
+
 function DetailsImage() {
+  // const [{ images, id }] = props;
   const [img1Active, setImg1Active] = useState(true);
   const [img2Active, setImg2Active] = useState(false);
   const [img3Active, setImg3Active] = useState(false);
   const [img4Active, setImg4Active] = useState(false);
-  const [imgActive, setImgActive] = useState("./images/img2.jpg");
+  const [imgActive, setImgActive] = useState("./images/im2.jpg");
+  const dataImage = useRef<any>(imgActive);
 
   const handleChange = (data: any) => {
     if (data.id === 2) {
@@ -33,7 +37,7 @@ function DetailsImage() {
       setImg4Active(true);
       setImg3Active(false);
       setImg2Active(false);
-    } 
+    }
   };
 
   return (
@@ -46,21 +50,23 @@ function DetailsImage() {
                 {imgProduct.map((data, index) => {
                   return (
                     <li
-                    key={index}
-                    value={data.id}
-                    onClick={() => {
-                      let elem = document.getElementById(data.id.toString())
-                      console.log(elem)
-                      setImgActive(elem!.attributes[0].value.toString())
-                      handleChange(data)
-                    }}
+                      key={index}
+                      value={data.id}
+                      onClick={() => {
+                        let elem = document.getElementById(
+                          data.id.toString()
+                        );
+                        console.log(elem);
+                        setImgActive(elem!.attributes[0].value.toString());
+                        handleChange(data);
+                      }}
                     >
                       <img
-                        src={`./images/${data.img}`}
+                        src={`./images/${data.images}`}
                         id={data.id.toString()}
                         alt="products"
-                        className="w-[120px] h-[120px] rounded-md cursor-pointer object-cover"                        
-                        />
+                        className="w-[120px] h-[120px] rounded-md cursor-pointer object-cover"
+                      />
                     </li>
                   );
                 })}

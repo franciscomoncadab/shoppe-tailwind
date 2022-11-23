@@ -1,18 +1,20 @@
+import { DetailsImageProps } from "./organisms/DetailsImage"
+
 export const imgProduct = [
      {
-          img: "img2.jpg",
+          images: "img2.jpg",
           id: 2
      },
      {
-          img: "img3.jpg",
+          images: "img3.jpg",
           id: 3
      },
      {
-          img: "img4.jpg",
+          images: "img4.jpg",
           id: 4
      },
      {
-          img: "img5.jpg",
+          images: "img5.jpg",
           id: 5
      },
 ]
