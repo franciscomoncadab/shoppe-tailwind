@@ -8,13 +8,12 @@ import DetailsImageM from "../molecules/DetailsImageM";
 export type DetailsImageProps = { images: string; id: number };
 
 function DetailsImage() {
-  // const [{ images, id }] = props;
   const [img1Active, setImg1Active] = useState(true);
   const [img2Active, setImg2Active] = useState(false);
   const [img3Active, setImg3Active] = useState(false);
   const [img4Active, setImg4Active] = useState(false);
-  const [imgActive, setImgActive] = useState("./images/im2.jpg");
-  const dataImage = useRef<any>();
+  const [imgActive, setImgActive] = useState("img2.jpg");
+  const dataImage = useRef<any>("");
 
   const handleChange = (data: any) => {
     if (data.id === 2) {
@@ -40,6 +39,7 @@ function DetailsImage() {
     }
   };
 
+
   return (
     <div>
       {window.innerWidth > 1020 ? (
@@ -51,24 +51,16 @@ function DetailsImage() {
                   return (
                     <li
                       key={index}
-                      value={data.id}
-                      onClick={() => {
-                        let elem = document.getElementById(
-                          data.id.toString()
-                        );
-                        
-                        setImgActive(elem!.attributes[0].value.toString());
-                        handleChange(data);
-                      }}
                     >
                       <img
                         src={`./images/${data.images}`}
                         ref={dataImage}
-                        id={data.id.toString()}
                         alt="products"
                         className="w-[120px] h-[120px] rounded-md cursor-pointer object-cover"
-                        onClick={() => { 
-                          console.log(dataImage.current.__reactProps$y5qqert90tk.src)
+                        onClick={() => {
+                          let dataImage = data.images
+                          setImgActive(dataImage);
+                          handleChange(data);
                         }}
                       />
                     </li>
@@ -77,7 +69,7 @@ function DetailsImage() {
               </ul>
               <img
                 className="w-[540px] h-[600px] object-cover rounded-md"
-                src={imgActive}
+                src={`./images/${imgActive}`}
                 alt="img5"
               />
             </div>
