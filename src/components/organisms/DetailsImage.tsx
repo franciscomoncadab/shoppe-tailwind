@@ -14,7 +14,7 @@ function DetailsImage() {
   const [img3Active, setImg3Active] = useState(false);
   const [img4Active, setImg4Active] = useState(false);
   const [imgActive, setImgActive] = useState("./images/im2.jpg");
-  const dataImage = useRef<any>(imgActive);
+  const dataImage = useRef<any>();
 
   const handleChange = (data: any) => {
     if (data.id === 2) {
@@ -56,16 +56,20 @@ function DetailsImage() {
                         let elem = document.getElementById(
                           data.id.toString()
                         );
-                        console.log(elem);
+                        
                         setImgActive(elem!.attributes[0].value.toString());
                         handleChange(data);
                       }}
                     >
                       <img
                         src={`./images/${data.images}`}
+                        ref={dataImage}
                         id={data.id.toString()}
                         alt="products"
                         className="w-[120px] h-[120px] rounded-md cursor-pointer object-cover"
+                        onClick={() => { 
+                          console.log(dataImage.current.__reactProps$y5qqert90tk.src)
+                        }}
                       />
                     </li>
                   );
